@@ -43,22 +43,28 @@ class _HomeViewState extends State<HomeView> {
               top: false,
               child: Scaffold(
                 backgroundColor: Colors.transparent,
-                body: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SizedBox(height: 62),
-                      location(context),
-                      const SizedBox(height: 26),
-                      searchCoffee(context),
-                      const SizedBox(height: 26),
-                      promoCard(context),
-                      const SizedBox(height: 25),
-                      coffeeTypes(context),
-                      const SizedBox(height: 17),
-                      coffeeList(state.coffees ?? []),
-                    ],
-                  ),
+                body: Column(
+                  children: [
+                    const SizedBox(height: 62),
+                    location(context),
+                    const SizedBox(height: 26),
+                    searchCoffee(context),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const SizedBox(height: 26),
+                            promoCard(context),
+                            const SizedBox(height: 25),
+                            coffeeTypes(context),
+                            const SizedBox(height: 17),
+                            coffeeList(state.coffees ?? []),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 bottomNavigationBar: Container(
                   height: 60,
@@ -89,7 +95,7 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 
-  GridView coffeeList(List<Coffee> coffees) {
+  Widget coffeeList(List<Coffee> coffees) {
     return GridView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       shrinkWrap: true,
