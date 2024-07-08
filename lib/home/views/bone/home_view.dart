@@ -188,7 +188,7 @@ class _HomeViewState extends State<HomeView> {
                           ),
                     ),
                     Text(
-                      '${coffee.ingredients?.first}',
+                      'with ${coffee.ingredients?.first}',
                       maxLines: 1,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             color: AppColors.starDust,
