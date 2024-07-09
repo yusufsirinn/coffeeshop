@@ -6,3 +6,4 @@ export '../design_system/atoms/app_bar/cs_app_bar.dart';
 export '../design_system/atoms/dividers/cs_divider.dart';
 export '../design_system/atoms/buttons/cs_button.dart';
 export '../design_system/atoms/chips/cs_chip.dart';
+export '../design_system/atoms/stepper/cs_stepper.dart';

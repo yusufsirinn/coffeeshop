@@ -58,5 +58,18 @@
             "paymentType": "Cash",
             "button": "Order"
         }
+    },
+    "delivery": {
+        "order": {
+            "time": "10 minutes left",
+            "deliver": "Delivery to ",
+            "to": "Jl. Kpg Sutoyo",
+            "title": "Delivered your order",
+            "subtitle": "We deliver your goods to you in the shortes possible time."
+        }, 
+        "personal": {
+            "name": "Johan Hawn",
+            "info": "WPersonal Courier"
+        }
     }
 }
