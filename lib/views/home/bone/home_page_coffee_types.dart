@@ -40,11 +40,11 @@ class HomePageCoffeeTypes extends StatelessWidget {
               ),
               child: Text(
                 coffees[i],
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: i == selectedIndex ? Colors.white : AppColors.plantation,
-                      fontSize: 14,
-                      fontWeight: i == selectedIndex ? FontWeight.w600 : FontWeight.w400,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: i == selectedIndex ? Colors.white : AppColors.plantation,
+                  fontSize: 14,
+                  fontWeight: i == selectedIndex ? FontWeight.w600 : FontWeight.w400,
+                ),
               ),
             ),
           );

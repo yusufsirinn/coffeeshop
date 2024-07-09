@@ -69,29 +69,29 @@ class _DeliveryPageState extends State<DeliveryPage> {
                             ),
                             Text(
                               context.tr('delivery.order.time'),
-                              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                                    color: AppColors.gunmetal,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                              style: context.theme.textTheme.bodyMedium!.copyWith(
+                                color: AppColors.gunmetal,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                             const SizedBox(height: 6),
                             RichText(
                               text: TextSpan(
                                 text: context.tr('delivery.order.deliver'),
-                                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                      color: AppColors.granite,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w400,
-                                    ),
+                                style: context.theme.textTheme.bodyMedium?.copyWith(
+                                  color: AppColors.granite,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                ),
                                 children: [
                                   TextSpan(
                                     text: context.tr('delivery.order.to'),
-                                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                          color: AppColors.gunmetal,
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                    style: context.theme.textTheme.bodyMedium?.copyWith(
+                                      color: AppColors.gunmetal,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
                                   )
                                 ],
                               ),

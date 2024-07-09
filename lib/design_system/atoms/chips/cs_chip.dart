@@ -31,11 +31,11 @@ class CSChip extends StatelessWidget {
             const SizedBox(width: 4),
             Text(
               context.tr(text),
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.gunmetal,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                  ),
+              style: context.theme.textTheme.bodyMedium?.copyWith(
+                color: AppColors.gunmetal,
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ],
         ),

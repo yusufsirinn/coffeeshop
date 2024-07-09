@@ -30,11 +30,11 @@ class CSAppBar extends StatelessWidget {
             ),
             Text(
               title,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.thunder,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                  ),
+              style: context.theme.textTheme.bodyMedium?.copyWith(
+                color: AppColors.thunder,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             _trailing()
           ],

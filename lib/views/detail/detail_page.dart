@@ -52,18 +52,18 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 15),
               CSReadMoreText(
                 trimLines: 3,
-                textStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: AppColors.starDust,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    ),
+                textStyle: context.theme.textTheme.bodyMedium!.copyWith(
+                  color: AppColors.starDust,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                ),
                 showLessText: context.tr('detail.read.less'),
                 readMoreText: context.tr('detail.read.more'),
-                readMoreStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: AppColors.orangeSalmon,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                    ),
+                readMoreStyle: context.theme.textTheme.bodyMedium!.copyWith(
+                  color: AppColors.orangeSalmon,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
                 text: context.watch<CoffeeBloc>().state.selectedCoffee.description ?? '',
               ),
               const SizedBox(height: 22),
@@ -100,20 +100,20 @@ class _DetailPageState extends State<DetailPage> {
               children: [
                 Text(
                   context.tr('detail.navBar.price'),
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: AppColors.starDust,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
+                  style: context.theme.textTheme.bodyMedium!.copyWith(
+                    color: AppColors.starDust,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   r'$ ' + context.watch<CoffeeBloc>().state.selectedCoffee.price.toString(),
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: AppColors.orangeSalmon,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  style: context.theme.textTheme.bodyMedium!.copyWith(
+                    color: AppColors.orangeSalmon,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ],
             ),
@@ -133,11 +133,11 @@ class _DetailPageState extends State<DetailPage> {
   Text title(String text) {
     return Text(
       text,
-      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: AppColors.thunder,
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
-          ),
+      style: context.theme.textTheme.bodyMedium?.copyWith(
+        color: AppColors.thunder,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 }

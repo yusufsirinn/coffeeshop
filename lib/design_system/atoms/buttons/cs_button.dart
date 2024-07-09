@@ -26,11 +26,11 @@ class CSButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         context.tr(text),
-        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+        style: context.theme.textTheme.bodyMedium!.copyWith(
+          color: Colors.white,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }

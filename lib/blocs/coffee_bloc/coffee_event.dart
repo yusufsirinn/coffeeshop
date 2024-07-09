@@ -14,9 +14,9 @@ class CoffeeDetail extends CoffeeEvent {
   const CoffeeDetail(this.index);
 }
 
-class CoffeeFilter extends CoffeeEvent {
+class CoffeeCategory extends CoffeeEvent {
   final int index;
-  const CoffeeFilter(this.index);
+  const CoffeeCategory(this.index);
 }
 
 class CoffeeSearch extends CoffeeEvent {

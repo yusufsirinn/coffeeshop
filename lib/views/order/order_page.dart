@@ -79,11 +79,11 @@ class _OrderPageState extends State<OrderPage> {
           const SizedBox(height: 14),
           Text(
             context.tr('order.address.addressPart'),
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: AppColors.granite,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                ),
+            style: context.theme.textTheme.bodyMedium?.copyWith(
+              color: AppColors.granite,
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+            ),
           ),
           const SizedBox(height: 15),
           const Wrap(

@@ -14,13 +14,13 @@ class LoginSubtitle extends StatelessWidget {
       child: Text(
         context.tr('login.subtitle'),
         textAlign: TextAlign.center,
-        style: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: AppColors.silverChalice,
-              fontSize: 14,
-              height: 1.54,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 14 * .01,
-            ),
+        style: context.theme.textTheme.labelSmall?.copyWith(
+          color: AppColors.silverChalice,
+          fontSize: 14,
+          height: 1.54,
+          fontWeight: FontWeight.w400,
+          letterSpacing: 14 * .01,
+        ),
       ),
     );
   }

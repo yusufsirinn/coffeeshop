@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: LoginWithGoogleButton(
                     onTap: () {
-                      AppNavigator.instance.go(const HomePage());
+                      AppNavigator.instance.goAndRemove(const HomePage());
                     },
                   ),
                 )

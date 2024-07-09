@@ -21,20 +21,20 @@ class DetailCoffeeStarRating extends StatelessWidget {
             children: [
               Text(
                 name,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.thunder,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.thunder,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               const SizedBox(height: 8),
               Text(
                 context.tr('home.ingredients.with').args([ingredients.join(', ')]),
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.starDust,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.starDust,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w400,
+                ),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
                 softWrap: false,
@@ -50,9 +50,7 @@ class DetailCoffeeStarRating extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                         text: '4.8',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyMedium
+                        style: context.theme.textTheme.bodyMedium
                             ?.copyWith(color: AppColors.thunder, fontSize: 16, fontWeight: FontWeight.w600, shadows: [
                           Shadow(
                             blurRadius: 4,
@@ -63,11 +61,11 @@ class DetailCoffeeStarRating extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: ' (230)',
-                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: AppColors.granite,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                ),
+                            style: context.theme.textTheme.bodyMedium?.copyWith(
+                              color: AppColors.granite,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                            ),
                           )
                         ]),
                   ),

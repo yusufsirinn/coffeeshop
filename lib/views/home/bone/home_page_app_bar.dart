@@ -47,13 +47,13 @@ class HomePageAppBar extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Bilzen,Tanjungbalai',
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.white,
-                fontSize: 14,
-                height: 18 / 14,
-                fontWeight: FontWeight.w600,
-              ),
+          context.tr('home.appBar.subtitle'),
+          style: context.theme.textTheme.bodyMedium?.copyWith(
+            color: Colors.white,
+            fontSize: 14,
+            height: 18 / 14,
+            fontWeight: FontWeight.w600,
+          ),
         ),
         const SizedBox(width: 2),
         SvgPicture.asset(AppIcons.arrowDown.svg)
@@ -64,13 +64,13 @@ class HomePageAppBar extends StatelessWidget {
   Text title(BuildContext context) {
     return Text(
       context.tr('home.appBar.title'),
-      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: Colors.white,
-            fontSize: 12,
-            height: 15 / 12,
-            fontWeight: FontWeight.w400,
-            letterSpacing: -0.24,
-          ),
+      style: context.theme.textTheme.bodyMedium?.copyWith(
+        color: Colors.white,
+        fontSize: 12,
+        height: 15 / 12,
+        fontWeight: FontWeight.w400,
+        letterSpacing: -0.24,
+      ),
     );
   }
 }

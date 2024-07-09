@@ -4,12 +4,12 @@ class CoffeeState extends BaseState {
   final List<Coffee>? coffees;
   final String? search;
   final int? selectedCoffeeIndex;
-  final int? selectedCoffeeFilterIndex;
+  final int? selectedCoffeeCategoryIndex;
 
   const CoffeeState({
     this.selectedCoffeeIndex,
     this.search,
-    this.selectedCoffeeFilterIndex = 0,
+    this.selectedCoffeeCategoryIndex = 0,
     this.coffees,
     super.status = Status.initial,
   });
@@ -24,19 +24,19 @@ class CoffeeState extends BaseState {
   }
 
   @override
-  List<Object?> get props => [coffees, search, selectedCoffeeIndex, selectedCoffeeFilterIndex, status];
+  List<Object?> get props => [coffees, search, selectedCoffeeIndex, selectedCoffeeCategoryIndex, status];
 
   CoffeeState copyWith({
     List<Coffee>? coffees,
     int? selectedCoffeeIndex,
-    int? selectedCoffeeFilterIndex,
+    int? selectedCoffeeCategoryIndex,
     String? search,
     Status? status,
   }) {
     return CoffeeState(
       coffees: coffees ?? this.coffees,
       selectedCoffeeIndex: selectedCoffeeIndex ?? this.selectedCoffeeIndex,
-      selectedCoffeeFilterIndex: selectedCoffeeFilterIndex ?? this.selectedCoffeeFilterIndex,
+      selectedCoffeeCategoryIndex: selectedCoffeeCategoryIndex ?? this.selectedCoffeeCategoryIndex,
       status: status ?? this.status,
       search: search ?? this.search,
     );

@@ -18,18 +18,18 @@ class OrderPriceText extends StatelessWidget {
       children: [
         Text(
           context.tr(text),
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: AppColors.thunder,
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-              ),
+          style: context.theme.textTheme.bodyMedium?.copyWith(
+            color: AppColors.thunder,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+          ),
         ),
         const Spacer(),
         if (discount != null) const SizedBox(width: 8),
         if (discount != null)
           Text(
             discount!,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            style: context.theme.textTheme.bodyMedium?.copyWith(
                 color: AppColors.thunder,
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
@@ -38,11 +38,11 @@ class OrderPriceText extends StatelessWidget {
         const SizedBox(width: 8),
         Text(
           price,
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: AppColors.thunder,
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
+          style: context.theme.textTheme.bodyMedium?.copyWith(
+            color: AppColors.thunder,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ],
     );

@@ -15,13 +15,13 @@ class LoginTitle extends StatelessWidget {
       child: Text(
         context.tr('login.title'),
         textAlign: TextAlign.center,
-        style: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: Colors.white,
-              fontSize: 34,
-              height: 43 / 34,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 34 * 0.01,
-            ),
+        style: context.theme.textTheme.labelSmall?.copyWith(
+          color: Colors.white,
+          fontSize: 34,
+          height: 43 / 34,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 34 * 0.01,
+        ),
       ),
     );
   }

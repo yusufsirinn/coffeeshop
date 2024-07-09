@@ -77,11 +77,11 @@ class HomePageCoffeeGridView extends StatelessWidget {
                                   const SizedBox(width: 2),
                                   Text(
                                     '4.8',
-                                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                          color: Colors.white,
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                    style: context.theme.textTheme.bodyMedium?.copyWith(
+                                      color: Colors.white,
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.w600,
+                                    ),
                                   )
                                 ],
                               ),
@@ -102,20 +102,20 @@ class HomePageCoffeeGridView extends StatelessWidget {
                     Text(
                       coffee.title ?? '',
                       maxLines: 1,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.thunder,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
+                      style: context.theme.textTheme.bodyMedium?.copyWith(
+                        color: AppColors.thunder,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     Text(
                       context.tr('home.ingredients.with').args([coffee.ingredients?.first ?? '}']),
                       maxLines: 1,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.starDust,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                          ),
+                      style: context.theme.textTheme.bodyMedium?.copyWith(
+                        color: AppColors.starDust,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ],
                 ),
@@ -129,11 +129,11 @@ class HomePageCoffeeGridView extends StatelessWidget {
                   children: [
                     Text(
                       r'$ ' + coffee.price.toString(),
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.plantation,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                          ),
+                      style: context.theme.textTheme.bodyMedium?.copyWith(
+                        color: AppColors.plantation,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     InkWell(
                       onTap: () {

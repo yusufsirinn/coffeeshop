@@ -20,22 +20,22 @@ class OrderCounterTile extends StatelessWidget {
               Text(
                 coffee.title ?? '',
                 maxLines: 1,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.thunder,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.thunder,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               const SizedBox(height: 4),
               Text(
                 context.tr('home.ingredients.with').args([coffee.ingredients!.join(', ')]),
                 maxLines: 1,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.starDust,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
-                      overflow: TextOverflow.ellipsis,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.starDust,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w400,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
             ],
           ),
@@ -49,11 +49,11 @@ class OrderCounterTile extends StatelessWidget {
               counterButton(AppIcons.minus),
               Text(
                 '1',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.thunder,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
-                    ),
+                style: context.theme.textTheme.bodyMedium?.copyWith(
+                  color: AppColors.thunder,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               counterButton(AppIcons.add),
             ],

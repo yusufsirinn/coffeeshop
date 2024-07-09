@@ -31,20 +31,20 @@ class _DeliveryOrderTileState extends State<DeliveryOrderTile> {
               children: [
                 Text(
                   context.tr('delivery.order.title'),
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: AppColors.gunmetal,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  style: context.theme.textTheme.bodyMedium!.copyWith(
+                    color: AppColors.gunmetal,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
                 const SizedBox(width: 5),
                 Text(
                   context.tr('delivery.order.subtitle'),
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: AppColors.granite,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
+                  style: context.theme.textTheme.bodyMedium!.copyWith(
+                    color: AppColors.granite,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ],
             ),

@@ -14,11 +14,11 @@ class OrderTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       context.tr(text),
-      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: AppColors.thunder,
-            fontSize: fontSize,
-            fontWeight: FontWeight.w600,
-          ),
+      style: context.theme.textTheme.bodyMedium?.copyWith(
+        color: AppColors.thunder,
+        fontSize: fontSize,
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 }

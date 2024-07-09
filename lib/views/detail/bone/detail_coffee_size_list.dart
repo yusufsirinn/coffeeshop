@@ -72,11 +72,11 @@ class CoffeeSizeTile extends StatelessWidget {
       child: Center(
         child: Text(
           text,
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: textColor,
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-              ),
+          style: context.theme.textTheme.bodyMedium?.copyWith(
+            color: textColor,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+          ),
         ),
       ),
     );

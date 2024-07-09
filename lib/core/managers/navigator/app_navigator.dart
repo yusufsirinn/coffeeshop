@@ -18,6 +18,16 @@ class AppNavigator {
     );
   }
 
+  Future<T?> goAndRemove<T extends Object?>(Widget route) {
+    return _navigatorKey.currentState!.pushAndRemoveUntil<T>(
+      MaterialPageRoute<T>(
+        settings: RouteSettings(name: route.toString()),
+        builder: (BuildContext context) => route,
+      ),
+      (Route<dynamic> route) => false,
+    );
+  }
+
   void pop() {
     _navigatorKey.currentState!.pop();
   }

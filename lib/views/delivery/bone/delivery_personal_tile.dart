@@ -33,20 +33,20 @@ class DeliveryPersonalTile extends StatelessWidget {
           children: [
             Text(
               name,
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: AppColors.gunmetal,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
+              style: context.theme.textTheme.bodyMedium!.copyWith(
+                color: AppColors.gunmetal,
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             const SizedBox(width: 8),
             Text(
               info,
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: AppColors.granite,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                  ),
+              style: context.theme.textTheme.bodyMedium!.copyWith(
+                color: AppColors.granite,
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ],
         ),
