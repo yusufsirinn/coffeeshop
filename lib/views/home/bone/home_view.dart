@@ -7,7 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../blocs/coffee_bloc/coffee_bloc.dart';
 import '../../../core/core.dart';
 import '../../../design_system/design_system.dart';
-import '../../../detail/views/detail_page.dart';
+import '../../detail/detail_page.dart';
 import '../../../models/coffee.dart';
 import '../home_page.dart';
 

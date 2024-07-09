@@ -12,7 +12,6 @@ class DeliveryPage extends StatefulWidget {
 }
 
 class _DeliveryPageState extends State<DeliveryPage> {
-  // Manuel olarak belirlenen rota noktaları
   final List<LatLng> routePoints = [
     const LatLng(37.882602, 32.444150),
     const LatLng(37.882204, 32.445996),

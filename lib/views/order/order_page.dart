@@ -1,5 +1,5 @@
 import '../../blocs/coffee_bloc/coffee_bloc.dart';
-import '../../delivery/views/delivery_page.dart';
+import '../delivery/delivery_page.dart';
 import '../../models/coffee.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

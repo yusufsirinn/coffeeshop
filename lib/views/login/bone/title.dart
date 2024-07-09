@@ -1,4 +1,4 @@
-part of '../views/login_page.dart';
+part of '../login_page.dart';
 
 class Title extends StatelessWidget {
   const Title({

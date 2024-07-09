@@ -1,4 +1,4 @@
-part of '../views/login_page.dart';
+part of '../login_page.dart';
 
 class BackgroundImage extends StatelessWidget {
   const BackgroundImage({

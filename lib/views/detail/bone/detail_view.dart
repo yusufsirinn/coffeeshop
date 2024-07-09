@@ -5,7 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../blocs/coffee_bloc/coffee_bloc.dart';
 import '../../../core/core.dart';
 import '../../../design_system/design_system.dart';
-import '../../../order/views/order_page.dart';
+import '../../order/order_page.dart';
 
 class DetailView extends StatefulWidget {
   const DetailView({super.key});

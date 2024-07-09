@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../core/core.dart';
 import '../../design_system/design_system.dart';
-import '../../home/views/home_page.dart';
+import '../home/home_page.dart';
 
-part '../bone/background_image.dart';
-part '../bone/subtitle.dart';
-part '../bone/title.dart';
+part 'bone/background_image.dart';
+part 'bone/subtitle.dart';
+part 'bone/title.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
