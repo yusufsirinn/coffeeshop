@@ -18,3 +18,8 @@ class CoffeeFilter extends CoffeeEvent {
   final int index;
   const CoffeeFilter(this.index);
 }
+
+class CoffeeSearch extends CoffeeEvent {
+  final String? keyword;
+  const CoffeeSearch(this.keyword);
+}

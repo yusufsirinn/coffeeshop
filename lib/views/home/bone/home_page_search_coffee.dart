@@ -17,18 +17,17 @@ class HomePageSearchCoffee extends StatelessWidget {
         height: 52,
         child: TextField(
           onChanged: onChanged,
+          style: textStyle(context),
+          cursorColor: AppColors.mountainMist,
           decoration: InputDecoration(
             filled: true,
             fillColor: AppColors.dune,
             floatingLabelBehavior: FloatingLabelBehavior.never,
             label: Text(
               context.tr('home.textField.label'),
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.mountainMist,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                  ),
+              style: textStyle(context),
             ),
+            labelStyle: textStyle(context),
             prefixIcon: Padding(
               padding: const EdgeInsets.only(
                 top: 16,
@@ -62,5 +61,13 @@ class HomePageSearchCoffee extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  TextStyle? textStyle(BuildContext context) {
+    return Theme.of(context).textTheme.bodyMedium?.copyWith(
+          color: AppColors.mountainMist,
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+        );
   }
 }

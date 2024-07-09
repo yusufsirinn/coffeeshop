@@ -52,7 +52,9 @@ class _HomePageState extends State<HomePage> {
                     const HomePageAppBar(),
                     const SizedBox(height: 26),
                     HomePageSearchCoffee(
-                      onChanged: (value) {},
+                      onChanged: (value) {
+                        context.read<CoffeeBloc>().add(CoffeeSearch(value));
+                      },
                     ),
                     Expanded(
                       child: SingleChildScrollView(
@@ -72,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                             const SizedBox(height: 17),
                             HomePageCoffeeGridView(
-                              coffees: state.coffees ?? [],
+                              coffees: state.searchedCoffeeList ?? [],
                               onTap: (i) {
                                 context.read<CoffeeBloc>().add(CoffeeDetail(i));
                                 AppNavigator.instance.go(const DetailPage());
