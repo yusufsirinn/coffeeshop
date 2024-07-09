@@ -1,4 +1,4 @@
-import 'package:coffeeshop/core/core.dart';
+import '../core.dart';
 import 'package:flutter/material.dart';
 
 extension ContextExtensions on BuildContext {

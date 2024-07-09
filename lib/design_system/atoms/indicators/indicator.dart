@@ -1,4 +1,4 @@
-import 'package:coffeeshop/core/constants/app_colors.dart';
+import '../../../core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class Indicator extends StatelessWidget {

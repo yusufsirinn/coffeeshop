@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:coffeeshop/core/managers/network/models/response.dart';
+import 'models/response.dart';
 import 'package:dio/dio.dart' hide Response;
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';

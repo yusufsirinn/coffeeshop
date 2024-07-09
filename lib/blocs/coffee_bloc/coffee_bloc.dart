@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:coffeeshop/models/coffee.dart';
+import '../../models/coffee.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../core/base/base_state.dart';

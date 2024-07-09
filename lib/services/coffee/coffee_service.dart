@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:coffeeshop/models/coffee.dart';
+import '../../models/coffee.dart';
 import 'package:flutter/services.dart';
 
 import '../../core/core.dart';
