@@ -33,5 +33,30 @@
             "more": "Read More",
             "less": "Show Less"
         }
+    },
+    "order": {
+        "title": "Order",
+        "address": {
+            "title": "Delivery Address",
+            "address" : "Jl. Kpg Sutoyo",
+            "addressPart": "Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai."
+        },
+        "chip": {
+            "editAddress": "Edit Address",
+            "addNote": "Add Note"
+        },
+        "discount": {
+            "text": "1 Discount is applied"
+        },
+        "payment": {
+            "title": "Payment Summary",
+            "price": "Price",
+            "delivery": "Delivery Fee",
+            "total": "Total Payment"
+        },
+        "navBar": {
+            "paymentType": "Cash",
+            "button": "Order"
+        }
     }
 }

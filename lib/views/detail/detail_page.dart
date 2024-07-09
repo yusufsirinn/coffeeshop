@@ -120,7 +120,7 @@ class _DetailPageState extends State<DetailPage> {
             const SizedBox(width: 45),
             Expanded(
               child: CSButton(
-                text: context.tr('detail.navBar.button'),
+                text: 'detail.navBar.button',
                 onPressed: () => AppNavigator.instance.go(const OrderPage()),
               ),
             ),

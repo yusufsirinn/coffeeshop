@@ -25,7 +25,7 @@ class CSButton extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Text(
-        text,
+        context.tr(text),
         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: Colors.white,
               fontSize: 16,

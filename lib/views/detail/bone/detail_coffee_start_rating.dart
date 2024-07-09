@@ -29,7 +29,7 @@ class DetailCoffeeStarRating extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'with ${ingredients.join(', ')}',
+                context.tr('home.ingredients.with').args([ingredients.join(', ')]),
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: AppColors.starDust,
                       fontSize: 12,
