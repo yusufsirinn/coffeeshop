@@ -1,7 +1,7 @@
 part of '../login_page.dart';
 
-class Title extends StatelessWidget {
-  const Title({
+class LoginTitle extends StatelessWidget {
+  const LoginTitle({
     super.key,
   });
 

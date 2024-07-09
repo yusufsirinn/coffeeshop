@@ -4,9 +4,9 @@ import '../../core/core.dart';
 import '../../design_system/design_system.dart';
 import '../home/home_page.dart';
 
-part 'bone/background_image.dart';
-part 'bone/subtitle.dart';
-part 'bone/title.dart';
+part 'bone/login_background_image.dart';
+part 'bone/login_subtitle.dart';
+part 'bone/login_title.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -23,13 +23,13 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.black,
         body: Stack(
           children: [
-            const BackgroundImage(),
+            const LoginBackgroundImage(),
             Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                const Title(),
+                const LoginTitle(),
                 const SizedBox(height: 17),
-                const Subtitle(),
+                const LoginSubtitle(),
                 const SizedBox(height: 17),
                 Padding(
                   padding: const EdgeInsets.symmetric(

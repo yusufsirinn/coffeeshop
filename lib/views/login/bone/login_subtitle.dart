@@ -1,7 +1,7 @@
 part of '../login_page.dart';
 
-class Subtitle extends StatelessWidget {
-  const Subtitle({
+class LoginSubtitle extends StatelessWidget {
+  const LoginSubtitle({
     super.key,
   });
 

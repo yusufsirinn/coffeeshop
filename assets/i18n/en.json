@@ -4,5 +4,21 @@
         "title": "Coffee so good, your taste buds will love it.",
         "subtitle": "The best grain, the finest roast, the powerful flavor.",
         "button": "Continue with Google"
+    },
+    "home": {
+        "appBar" : {
+            "title": "Location",
+            "subtitle": "Bilzen,Tanjungbalai"
+        },
+        "textField": {
+            "label": "Search coffee"
+        },
+        "promoCard": {
+            "text": "Promo",
+            "info": "Buy one get \none Free"
+        },
+        "ingredients": {
+            "with": "with {0}"
+        }
     }
 }

@@ -13,3 +13,8 @@ class CoffeeDetail extends CoffeeEvent {
   final int index;
   const CoffeeDetail(this.index);
 }
+
+class CoffeeFilter extends CoffeeEvent {
+  final int index;
+  const CoffeeFilter(this.index);
+}

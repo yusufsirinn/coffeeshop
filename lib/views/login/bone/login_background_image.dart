@@ -1,7 +1,7 @@
 part of '../login_page.dart';
 
-class BackgroundImage extends StatelessWidget {
-  const BackgroundImage({
+class LoginBackgroundImage extends StatelessWidget {
+  const LoginBackgroundImage({
     super.key,
   });
 

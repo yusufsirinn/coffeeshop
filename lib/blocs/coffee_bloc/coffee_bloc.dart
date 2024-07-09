@@ -17,6 +17,7 @@ class CoffeeBloc extends Bloc<CoffeeEvent, CoffeeState> {
         super(const CoffeeState()) {
     on<CoffeeListFetch>(_onCoffeeListFetch);
     on<CoffeeDetail>(_onSelectCoffee);
+    on<CoffeeFilter>(_onFilterCoffee);
   }
 
   Future<void> _onCoffeeListFetch(
@@ -46,5 +47,12 @@ class CoffeeBloc extends Bloc<CoffeeEvent, CoffeeState> {
     Emitter<CoffeeState> emit,
   ) async {
     emit(state.copyWith(selectedCoffeeIndex: event.index));
+  }
+
+  Future<void> _onFilterCoffee(
+    CoffeeFilter event,
+    Emitter<CoffeeState> emit,
+  ) async {
+    emit(state.copyWith(selectedCoffeeFilterIndex: event.index));
   }
 }

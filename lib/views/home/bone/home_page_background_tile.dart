@@ -1,7 +1,7 @@
 part of '../home_page.dart';
 
-class BackgroundTile extends StatelessWidget {
-  const BackgroundTile({
+class HomePageBackgroundTile extends StatelessWidget {
+  const HomePageBackgroundTile({
     super.key,
   });
 
