@@ -21,7 +21,7 @@ class _DeliveryOrderTileState extends State<DeliveryOrderTile> {
       child: Row(
         children: [
           Image.asset(
-            Images.bike.png,
+            AppImages.bike.png,
           ),
           const SizedBox(width: 25),
           Expanded(

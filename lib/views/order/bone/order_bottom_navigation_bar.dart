@@ -7,7 +7,7 @@ class OrderBottomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBarContainer(
+    return CSBottomNavigationBarContainer(
       height: 140,
       child: Padding(
         padding: const EdgeInsets.symmetric(

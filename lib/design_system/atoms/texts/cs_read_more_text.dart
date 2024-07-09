@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-class ReadMoreText extends StatefulWidget {
+class CSReadMoreText extends StatefulWidget {
   final String text;
   final String readMoreText;
   final String showLessText;
@@ -10,7 +10,7 @@ class ReadMoreText extends StatefulWidget {
 
   final int trimLines;
 
-  const ReadMoreText({
+  const CSReadMoreText({
     super.key,
     required this.text,
     required this.trimLines,
@@ -21,10 +21,10 @@ class ReadMoreText extends StatefulWidget {
   });
 
   @override
-  ReadMoreTextState createState() => ReadMoreTextState();
+  CSReadMoreTextState createState() => CSReadMoreTextState();
 }
 
-class ReadMoreTextState extends State<ReadMoreText> {
+class CSReadMoreTextState extends State<CSReadMoreText> {
   bool _readMore = true;
 
   @override

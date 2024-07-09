@@ -18,7 +18,7 @@ class CoffeeState extends BaseState {
 
   List<Coffee>? get searchedCoffeeList {
     if (search != null && search!.isNotEmpty) {
-      return coffees?.where((coffee) => coffee.title!.toLowerCase().contains(search!)).toList();
+      return coffees?.where((coffee) => coffee.title!.toLowerCase().contains(search!.toLowerCase())).toList();
     }
     return coffees;
   }

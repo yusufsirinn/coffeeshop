@@ -1,13 +1,13 @@
-import '../../core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:latlong2/latlong.dart';
 
+import '../../core/core.dart';
 import '../../design_system/design_system.dart';
 
-part 'bone/delivery_map.dart';
 part 'bone/delivery_app_bar.dart';
+part 'bone/delivery_map.dart';
 part 'bone/delivery_order_tile.dart';
 part 'bone/delivery_personal_tile.dart';
 
@@ -107,7 +107,7 @@ class _DeliveryPageState extends State<DeliveryPage> {
                             DeliveryPersonalTile(
                               name: context.tr('delivery.personal.name'),
                               info: context.tr('delivery.personal.info'),
-                              image: Images.personal.png,
+                              image: AppImages.personal.png,
                             )
                           ],
                         ),

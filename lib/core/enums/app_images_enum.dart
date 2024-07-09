@@ -1,4 +1,4 @@
-enum Images {
+enum AppImages {
   coffeeSoGood('coffee_so_good'),
   promoCoffee('promo_coffee'),
   coffee('coffee'),
@@ -8,7 +8,7 @@ enum Images {
   bean('bean'),
   profilePhoto('profile_photo');
 
-  const Images(this._name);
+  const AppImages(this._name);
 
   final String _name;
 

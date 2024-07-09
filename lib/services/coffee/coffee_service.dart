@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import '../../models/coffee.dart';
 import 'package:flutter/services.dart';
 
 import '../../core/core.dart';
 import '../../core/managers/network/models/response.dart';
+import '../../models/coffee.dart';
 
 abstract class ICoffeeService {
   FutureResponse<Coffee> fetchCoffees();

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TextWithBackgroundPainter extends StatelessWidget {
+class CSTextWithBackgroundPainter extends StatelessWidget {
   final String text;
   final TextStyle textStyle;
   final Color backgroundColor;
 
-  const TextWithBackgroundPainter({
+  const CSTextWithBackgroundPainter({
     super.key,
     required this.text,
     required this.textStyle,

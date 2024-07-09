@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'models/response.dart';
 import 'package:dio/dio.dart' hide Response;
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
-import '../network/models/error.dart';
 
 import '../../core.dart';
+import '../network/models/error.dart';
 import 'interceptors/app_log_interceptor.dart';
+import 'models/response.dart';
 
 typedef FutureResponse<T extends BaseResponseModel> = Future<Response<T>>;
 

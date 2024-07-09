@@ -87,7 +87,7 @@ class DetailCoffeeStarRating extends StatelessWidget {
                 borderRadius: BorderRadius.circular(14),
               ),
               child: Image.asset(
-                Images.bean.png,
+                AppImages.bean.png,
                 height: 24,
               ),
             ),
@@ -101,7 +101,7 @@ class DetailCoffeeStarRating extends StatelessWidget {
                 borderRadius: BorderRadius.circular(14),
               ),
               child: Image.asset(
-                Images.milk.png,
+                AppImages.milk.png,
                 height: 24,
               ),
             ),

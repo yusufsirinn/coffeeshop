@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
 
-class BottomNavigationBarContainer extends StatelessWidget {
+class CSBottomNavigationBarContainer extends StatelessWidget {
   final Widget child;
   final double height;
-  const BottomNavigationBarContainer({
+  const CSBottomNavigationBarContainer({
     super.key,
     required this.child,
     this.height = 60,

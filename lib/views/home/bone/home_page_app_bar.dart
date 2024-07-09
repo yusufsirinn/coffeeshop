@@ -35,7 +35,7 @@ class HomePageAppBar extends StatelessWidget {
       height: 44,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Images.profilePhoto.png),
+          image: AssetImage(AppImages.profilePhoto.png),
           fit: BoxFit.fill,
         ),
         borderRadius: BorderRadius.circular(12),

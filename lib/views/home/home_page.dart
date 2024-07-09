@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import '../detail/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -9,13 +8,14 @@ import '../../../blocs/coffee_bloc/coffee_bloc.dart';
 import '../../../core/core.dart';
 import '../../../design_system/design_system.dart';
 import '../../../models/coffee.dart';
+import '../detail/detail_page.dart';
 
-part 'bone/home_page_background_tile.dart';
 part '../home/bone/home_page_app_bar.dart';
-part '../home/bone/home_page_search_coffee.dart';
-part '../home/bone/home_page_promo_card.dart';
-part '../home/bone/home_page_coffee_types.dart';
 part '../home/bone/home_page_coffee_grid_view.dart';
+part '../home/bone/home_page_coffee_types.dart';
+part '../home/bone/home_page_promo_card.dart';
+part '../home/bone/home_page_search_coffee.dart';
+part 'bone/home_page_background_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -85,12 +85,12 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        loading: const Indicator(),
+                        loading: const CSIndicator(),
                       ),
                     ),
                   ],
                 ),
-                bottomNavigationBar: BottomNavigationBarContainer(
+                bottomNavigationBar: CSBottomNavigationBarContainer(
                   height: 60,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

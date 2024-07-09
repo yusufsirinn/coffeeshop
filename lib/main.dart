@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'blocs/coffee_bloc/coffee_bloc.dart';
 import 'core/core.dart';
-import 'views/login/login_page.dart';
 import 'services/coffee/coffee_service.dart';
+import 'views/login/login_page.dart';
 
 void main() {
   runApp(const MyApp());

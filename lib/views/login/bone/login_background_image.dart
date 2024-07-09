@@ -11,7 +11,7 @@ class LoginBackgroundImage extends StatelessWidget {
       offset: const Offset(0, -154),
       child: SizedBox(
         child: Image.asset(
-          Images.coffeeSoGood.png,
+          AppImages.coffeeSoGood.png,
           fit: BoxFit.fitWidth,
           width: 458,
           height: 702,

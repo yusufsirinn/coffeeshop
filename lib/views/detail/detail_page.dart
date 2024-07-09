@@ -50,7 +50,7 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 20),
               title(context.tr('detail.description')),
               const SizedBox(height: 15),
-              ReadMoreText(
+              CSReadMoreText(
                 trimLines: 3,
                 textStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       color: AppColors.starDust,
@@ -81,8 +81,8 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 
-  BottomNavigationBarContainer navBar(BuildContext context) {
-    return BottomNavigationBarContainer(
+  CSBottomNavigationBarContainer navBar(BuildContext context) {
+    return CSBottomNavigationBarContainer(
       height: 110,
       child: Padding(
         padding: const EdgeInsets.symmetric(

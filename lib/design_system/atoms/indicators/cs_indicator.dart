@@ -1,9 +1,9 @@
 import '../../../core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class Indicator extends StatelessWidget {
+class CSIndicator extends StatelessWidget {
   final Color? color;
-  const Indicator({super.key, this.color});
+  const CSIndicator({super.key, this.color});
 
   @override
   Widget build(BuildContext context) {

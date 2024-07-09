@@ -20,7 +20,7 @@ class HomePagePromoCard extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(Images.promoCoffee.png),
+                  image: AssetImage(AppImages.promoCoffee.png),
                   fit: BoxFit.fill,
                 ),
                 borderRadius: BorderRadius.circular(16),
@@ -53,7 +53,7 @@ class HomePagePromoCard extends StatelessWidget {
                   const SizedBox(height: 13),
                   Column(
                     children: [
-                      TextWithBackgroundPainter(
+                      CSTextWithBackgroundPainter(
                         text: text,
                         backgroundColor: Colors.black,
                         textStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(

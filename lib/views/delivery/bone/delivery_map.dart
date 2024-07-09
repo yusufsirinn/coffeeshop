@@ -60,7 +60,7 @@ class DeliveryMap extends StatelessWidget {
             child: Transform.flip(
               flipX: true,
               child: Image.asset(
-                Images.bike.png,
+                AppImages.bike.png,
               ),
             ),
           ),
