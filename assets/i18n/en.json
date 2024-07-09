@@ -20,5 +20,18 @@
         "ingredients": {
             "with": "with {0}"
         }
+    },
+    "detail": {
+        "title": "Detail",
+        "description": "Description",
+        "size": "Size",
+        "navBar": {
+            "price": "Price",
+            "button": "Buy Now"
+        },
+        "read": {
+            "more": "Read More",
+            "less": "Show Less"
+        }
     }
 }
