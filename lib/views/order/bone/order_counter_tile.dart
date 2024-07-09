@@ -13,31 +13,34 @@ class OrderCounterTile extends StatelessWidget {
       children: [
         coffeeImage(coffee.image),
         const SizedBox(width: 21),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              coffee.title ?? '',
-              maxLines: 1,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.thunder,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              context.tr('home.ingredients.with').args([coffee.ingredients!.join(', ')]),
-              maxLines: 1,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.starDust,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                  ),
-            ),
-          ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                coffee.title ?? '',
+                maxLines: 1,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: AppColors.thunder,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                context.tr('home.ingredients.with').args([coffee.ingredients!.join(', ')]),
+                maxLines: 1,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: AppColors.starDust,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+              ),
+            ],
+          ),
         ),
-        const Spacer(),
+        const SizedBox(width: 8),
         SizedBox(
           width: 90,
           child: Row(

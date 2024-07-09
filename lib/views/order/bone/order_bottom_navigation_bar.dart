@@ -68,13 +68,11 @@ class OrderBottomNavigationBar extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 17),
-            Expanded(
-              child: CSButton(
-                text: 'order.navBar.button',
-                onPressed: () {
-                  AppNavigator.instance.go(const DeliveryPage());
-                },
-              ),
+            CSButton(
+              text: 'order.navBar.button',
+              onPressed: () {
+                AppNavigator.instance.go(const DeliveryPage());
+              },
             ),
           ],
         ),
