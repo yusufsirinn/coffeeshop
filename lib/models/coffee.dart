@@ -34,4 +34,7 @@ class Coffee extends BaseResponseModel {
       price: price,
     );
   }
+
+  @override
+  List<Object?> get props => [title, description, ingredients, image, id, price];
 }

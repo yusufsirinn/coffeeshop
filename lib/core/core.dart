@@ -10,6 +10,8 @@ export '../core/extensions/flex_extensions.dart';
 export '../core/extensions/string_extendions.dart';
 export '../core/localization/app_localizations.dart';
 export '../core/managers/navigator/app_navigator.dart';
+export '../core/managers/network/models/response.dart';
+export '../core/managers/network/models/error.dart';
 export '../core/managers/network/network_service.dart';
 export '../core/utils/logger.dart';
 export '../core/utils/view_state_widget.dart';
