@@ -66,18 +66,14 @@ class OrderCounterTile extends StatelessWidget {
     );
   }
 
-  Container coffeeImage(String? image) {
-    return Container(
-      height: 54,
-      width: 54,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(
-            image ?? '',
-          ),
-          fit: BoxFit.cover,
-        ),
+  Widget coffeeImage(String? image) {
+    return SizedBox.square(
+      dimension: 54,
+      child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
+        child: CSNetworkImage(
+          image: image,
+        ),
       ),
     );
   }

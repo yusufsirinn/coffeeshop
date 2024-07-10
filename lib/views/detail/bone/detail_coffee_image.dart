@@ -6,14 +6,14 @@ class DetailCoffeeImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 226,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(imageUrl ?? ''),
-          fit: BoxFit.cover,
-        ),
+      width: double.infinity,
+      child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
+        child: CSNetworkImage(
+          image: imageUrl,
+        ),
       ),
     );
   }

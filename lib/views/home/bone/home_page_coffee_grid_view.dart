@@ -47,13 +47,8 @@ class HomePageCoffeeGridView extends StatelessWidget {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: NetworkImage(
-                              coffee.image ?? '',
-                            ),
-                          ),
                         ),
+                        child: CSNetworkImage(image: coffee.image),
                       ),
                     ),
                     ClipRRect(

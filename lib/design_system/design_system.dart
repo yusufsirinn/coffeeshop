@@ -5,6 +5,7 @@ export '../design_system/atoms/chips/cs_chip.dart';
 export '../design_system/atoms/dividers/cs_divider.dart';
 export '../design_system/atoms/stepper/cs_stepper.dart';
 export 'atoms/containers/cs_bottom_navigation_bar_container.dart';
+export 'atoms/images/cs_network_image.dart';
 export 'atoms/indicators/cs_indicator.dart';
 export 'atoms/texts/cs_read_more_text.dart';
 export 'atoms/texts/cs_text_with_background_painter.dart';
