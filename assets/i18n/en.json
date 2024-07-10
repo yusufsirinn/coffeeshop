@@ -1,5 +1,10 @@
 {
     "appTitle": "Coffee Shop",
+    "design_system": {
+        "list": {
+            "empty": "No results found. Please review your search criteria."
+        }
+    },
     "login": {
         "title": "Coffee so good, your taste buds will love it.",
         "subtitle": "The best grain, the finest roast, the powerful flavor.",

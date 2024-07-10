@@ -38,7 +38,12 @@ class CoffeeBloc extends Bloc<CoffeeEvent, CoffeeState> {
         );
       },
       onError: (err) {
-        emit(state.copyWith(status: Status.failure));
+        emit(
+          state.copyWith(
+            status: Status.failure,
+            errorMessage: err.message,
+          ),
+        );
       },
     );
   }

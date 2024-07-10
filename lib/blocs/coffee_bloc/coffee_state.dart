@@ -12,6 +12,7 @@ class CoffeeState extends BaseState {
     this.selectedCoffeeCategoryIndex = 0,
     this.coffees,
     super.status = Status.initial,
+    super.errorMessage,
   });
 
   Coffee get selectedCoffee => coffees![selectedCoffeeIndex ?? 0];
@@ -31,6 +32,7 @@ class CoffeeState extends BaseState {
     int? selectedCoffeeIndex,
     int? selectedCoffeeCategoryIndex,
     String? search,
+    String? errorMessage,
     Status? status,
   }) {
     return CoffeeState(
@@ -39,6 +41,7 @@ class CoffeeState extends BaseState {
       selectedCoffeeCategoryIndex: selectedCoffeeCategoryIndex ?? this.selectedCoffeeCategoryIndex,
       status: status ?? this.status,
       search: search ?? this.search,
+      errorMessage: errorMessage ?? this.errorMessage,
     );
   }
 }

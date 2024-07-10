@@ -57,39 +57,38 @@ class _HomePageState extends State<HomePage> {
                       },
                     ),
                     Expanded(
-                      child: SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            const SizedBox(height: 26),
-                            HomePagePromoCard(
-                              text: context.tr('home.promoCard.info'),
-                            ),
-                            const SizedBox(height: 25),
-                            ViewStateWidget(
-                              status: state.status,
-                              success: Column(
-                                children: [
-                                  HomePageCoffeeTypes(
-                                    selectedIndex: context.watch<CoffeeBloc>().state.selectedCoffeeCategoryIndex ?? 0,
-                                    coffees:
-                                        context.watch<CoffeeBloc>().state.coffees?.map((c) => c.title ?? '').toList() ??
-                                            [],
-                                    onTap: (index) => context.read<CoffeeBloc>().add(CoffeeCategory(index)),
-                                  ),
-                                  const SizedBox(height: 17),
-                                  HomePageCoffeeGridView(
-                                    coffees: state.searchedCoffeeList ?? [],
-                                    onTap: (i) {
-                                      context.read<CoffeeBloc>().add(CoffeeDetail(i));
-                                      AppNavigator.instance.go(const DetailPage());
-                                    },
-                                  ),
-                                ],
+                      child: ViewStateWidget(
+                        status: state.status,
+                        success: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 26),
+                              HomePagePromoCard(
+                                text: context.tr('home.promoCard.info'),
                               ),
-                              loading: const CSIndicator(),
-                            )
-                          ],
+                              const SizedBox(height: 25),
+                              HomePageCoffeeTypes(
+                                selectedIndex: context.watch<CoffeeBloc>().state.selectedCoffeeCategoryIndex ?? 0,
+                                coffees:
+                                    context.watch<CoffeeBloc>().state.coffees?.map((c) => c.title ?? '').toList() ?? [],
+                                onTap: (index) => context.read<CoffeeBloc>().add(CoffeeCategory(index)),
+                              ),
+                              const SizedBox(height: 17),
+                              CSEmptyList(
+                                list: state.searchedCoffeeList,
+                                child: HomePageCoffeeGridView(
+                                  coffees: state.searchedCoffeeList ?? [],
+                                  onTap: (i) {
+                                    context.read<CoffeeBloc>().add(CoffeeDetail(i));
+                                    AppNavigator.instance.go(const DetailPage());
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
+                        loading: const CSIndicator(),
+                        failure: CSInfoText(text: state.errorMessage),
                       ),
                     ),
                   ],

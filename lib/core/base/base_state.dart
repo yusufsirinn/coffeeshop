@@ -4,5 +4,6 @@ import '../enums/status_enum.dart';
 
 abstract class BaseState extends Equatable {
   final Status status;
-  const BaseState({required this.status});
+  final String? errorMessage;
+  const BaseState({this.errorMessage, required this.status});
 }
