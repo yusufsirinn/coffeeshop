@@ -48,12 +48,7 @@ class HomePageAppBar extends StatelessWidget {
       children: [
         Text(
           context.tr('home.appBar.subtitle'),
-          style: context.theme.textTheme.bodyMedium?.copyWith(
-            color: Colors.white,
-            fontSize: 14,
-            height: 18 / 14,
-            fontWeight: FontWeight.w600,
-          ),
+          style: AppTextStyle.semiBold14(Colors.white),
         ),
         const SizedBox(width: 2),
         SvgPicture.asset(AppIcons.arrowDown.svg)
@@ -64,13 +59,7 @@ class HomePageAppBar extends StatelessWidget {
   Text title(BuildContext context) {
     return Text(
       context.tr('home.appBar.title'),
-      style: context.theme.textTheme.bodyMedium?.copyWith(
-        color: Colors.white,
-        fontSize: 12,
-        height: 15 / 12,
-        fontWeight: FontWeight.w400,
-        letterSpacing: -0.24,
-      ),
+      style: AppTextStyle.regular12(Colors.white),
     );
   }
 }

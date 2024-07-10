@@ -8,3 +8,4 @@ export 'atoms/containers/cs_bottom_navigation_bar_container.dart';
 export 'atoms/indicators/cs_indicator.dart';
 export 'atoms/texts/cs_read_more_text.dart';
 export 'atoms/texts/cs_text_with_background_painter.dart';
+export 'text_style/app_text_style.dart';

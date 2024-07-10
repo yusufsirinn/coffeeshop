@@ -69,29 +69,17 @@ class _DeliveryPageState extends State<DeliveryPage> {
                             ),
                             Text(
                               context.tr('delivery.order.time'),
-                              style: context.theme.textTheme.bodyMedium!.copyWith(
-                                color: AppColors.gunmetal,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              style: AppTextStyle.semiBold16(AppColors.gunmetal),
                             ),
                             const SizedBox(height: 6),
                             RichText(
                               text: TextSpan(
                                 text: context.tr('delivery.order.deliver'),
-                                style: context.theme.textTheme.bodyMedium?.copyWith(
-                                  color: AppColors.granite,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                ),
+                                style: AppTextStyle.regular12(AppColors.granite),
                                 children: [
                                   TextSpan(
                                     text: context.tr('delivery.order.to'),
-                                    style: context.theme.textTheme.bodyMedium?.copyWith(
-                                      color: AppColors.gunmetal,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                    style: AppTextStyle.semiBold12(AppColors.gunmetal),
                                   )
                                 ],
                               ),

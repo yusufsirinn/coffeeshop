@@ -43,11 +43,7 @@ class HomePagePromoCard extends StatelessWidget {
                     ),
                     child: Text(
                       context.tr('home.promoCard.text'),
-                      style: context.theme.textTheme.bodyMedium?.copyWith(
-                        color: Colors.white,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AppTextStyle.semiBold14(Colors.white),
                     ),
                   ),
                   const SizedBox(height: 13),
@@ -56,11 +52,7 @@ class HomePagePromoCard extends StatelessWidget {
                       CSTextWithBackgroundPainter(
                         text: text,
                         backgroundColor: Colors.black,
-                        textStyle: context.theme.textTheme.bodyMedium!.copyWith(
-                          color: Colors.white,
-                          fontSize: 32,
-                          height: 40 / 32,
-                        ),
+                        textStyle: AppTextStyle.regular32(Colors.white),
                       ),
                     ],
                   )

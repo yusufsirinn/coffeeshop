@@ -1,5 +1,6 @@
-import '../core.dart';
 import 'package:flutter/material.dart';
+
+import '../core.dart';
 
 extension ContextExtensions on BuildContext {
   String tr(String text) => AppLocalizations.of(this)?.translate(text) ?? '';

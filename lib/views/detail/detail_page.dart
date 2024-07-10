@@ -52,18 +52,10 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 15),
               CSReadMoreText(
                 trimLines: 3,
-                textStyle: context.theme.textTheme.bodyMedium!.copyWith(
-                  color: AppColors.starDust,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
+                textStyle: AppTextStyle.regular14(AppColors.starDust),
                 showLessText: context.tr('detail.read.less'),
                 readMoreText: context.tr('detail.read.more'),
-                readMoreStyle: context.theme.textTheme.bodyMedium!.copyWith(
-                  color: AppColors.orangeSalmon,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                ),
+                readMoreStyle: AppTextStyle.semiBold14(AppColors.orangeSalmon),
                 text: context.watch<CoffeeBloc>().state.selectedCoffee.description ?? '',
               ),
               const SizedBox(height: 22),
@@ -100,20 +92,12 @@ class _DetailPageState extends State<DetailPage> {
               children: [
                 Text(
                   context.tr('detail.navBar.price'),
-                  style: context.theme.textTheme.bodyMedium!.copyWith(
-                    color: AppColors.starDust,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: AppTextStyle.regular14(AppColors.starDust),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   r'$ ' + context.watch<CoffeeBloc>().state.selectedCoffee.price.toString(),
-                  style: context.theme.textTheme.bodyMedium!.copyWith(
-                    color: AppColors.orangeSalmon,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: AppTextStyle.semiBold18(AppColors.orangeSalmon),
                 ),
               ],
             ),
@@ -133,11 +117,7 @@ class _DetailPageState extends State<DetailPage> {
   Text title(String text) {
     return Text(
       text,
-      style: context.theme.textTheme.bodyMedium?.copyWith(
-        color: AppColors.thunder,
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-      ),
+      style: AppTextStyle.semiBold16(AppColors.thunder),
     );
   }
 }

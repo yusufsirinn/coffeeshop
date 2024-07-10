@@ -18,30 +18,22 @@ class OrderPriceText extends StatelessWidget {
       children: [
         Text(
           context.tr(text),
-          style: context.theme.textTheme.bodyMedium?.copyWith(
-            color: AppColors.thunder,
-            fontSize: 14,
-            fontWeight: FontWeight.w400,
-          ),
+          style: AppTextStyle.regular14(AppColors.thunder),
         ),
         const Spacer(),
         if (discount != null) const SizedBox(width: 8),
         if (discount != null)
           Text(
             discount!,
-            style: context.theme.textTheme.bodyMedium?.copyWith(
-                color: AppColors.thunder,
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-                decoration: TextDecoration.lineThrough),
+            style: AppTextStyle.regular14(AppColors.thunder).copyWith(
+              decoration: TextDecoration.lineThrough,
+            ),
           ),
         const SizedBox(width: 8),
         Text(
           price,
-          style: context.theme.textTheme.bodyMedium?.copyWith(
-            color: AppColors.thunder,
-            fontSize: 14,
-            fontWeight: FontWeight.w600,
+          style: AppTextStyle.semiBold14(
+            AppColors.thunder,
           ),
         ),
       ],

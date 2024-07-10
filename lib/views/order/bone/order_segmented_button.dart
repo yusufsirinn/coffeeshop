@@ -36,7 +36,7 @@ class OrderSegmentedButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: context.theme.textTheme.bodyMedium?.copyWith(
+            style: AppTextStyle.semiBold16(Colors.white).copyWith(
               color: isSelected ? Colors.white : AppColors.thunder,
               fontSize: 16,
               fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,

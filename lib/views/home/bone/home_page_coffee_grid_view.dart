@@ -77,11 +77,7 @@ class HomePageCoffeeGridView extends StatelessWidget {
                                   const SizedBox(width: 2),
                                   Text(
                                     '4.8',
-                                    style: context.theme.textTheme.bodyMedium?.copyWith(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                    style: AppTextStyle.semiBold10(Colors.white),
                                   )
                                 ],
                               ),
@@ -102,20 +98,12 @@ class HomePageCoffeeGridView extends StatelessWidget {
                     Text(
                       coffee.title ?? '',
                       maxLines: 1,
-                      style: context.theme.textTheme.bodyMedium?.copyWith(
-                        color: AppColors.thunder,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AppTextStyle.semiBold16(AppColors.thunder),
                     ),
                     Text(
                       context.tr('home.ingredients.with').args([coffee.ingredients?.first ?? '}']),
                       maxLines: 1,
-                      style: context.theme.textTheme.bodyMedium?.copyWith(
-                        color: AppColors.starDust,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
+                      style: AppTextStyle.regular12(AppColors.starDust),
                     ),
                   ],
                 ),
@@ -129,11 +117,7 @@ class HomePageCoffeeGridView extends StatelessWidget {
                   children: [
                     Text(
                       r'$ ' + coffee.price.toString(),
-                      style: context.theme.textTheme.bodyMedium?.copyWith(
-                        color: AppColors.plantation,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AppTextStyle.semiBold18(AppColors.plantation),
                     ),
                     InkWell(
                       onTap: () {

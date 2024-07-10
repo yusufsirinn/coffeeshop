@@ -14,11 +14,9 @@ class OrderTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       context.tr(text),
-      style: context.theme.textTheme.bodyMedium?.copyWith(
-        color: AppColors.thunder,
-        fontSize: fontSize,
-        fontWeight: FontWeight.w600,
-      ),
+      style: AppTextStyle.semiBold16(
+        AppColors.thunder,
+      ).copyWith(fontSize: fontSize),
     );
   }
 }

@@ -39,11 +39,7 @@ class OrderBottomNavigationBar extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: Text(
                           context.tr('order.navBar.paymentType'),
-                          style: context.theme.textTheme.bodyMedium?.copyWith(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: AppTextStyle.regular12(Colors.white),
                         ),
                       ),
                       Padding(
@@ -53,11 +49,7 @@ class OrderBottomNavigationBar extends StatelessWidget {
                         ),
                         child: Text(
                           r'$ 5.53',
-                          style: context.theme.textTheme.bodyMedium?.copyWith(
-                            color: AppColors.thunder,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: AppTextStyle.regular12(AppColors.thunder),
                         ),
                       ),
                     ],

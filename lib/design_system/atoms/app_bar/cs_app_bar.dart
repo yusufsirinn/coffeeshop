@@ -1,3 +1,4 @@
+import '../../design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -30,11 +31,7 @@ class CSAppBar extends StatelessWidget {
             ),
             Text(
               title,
-              style: context.theme.textTheme.bodyMedium?.copyWith(
-                color: AppColors.thunder,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AppTextStyle.semiBold18(AppColors.thunder),
             ),
             _trailing()
           ],

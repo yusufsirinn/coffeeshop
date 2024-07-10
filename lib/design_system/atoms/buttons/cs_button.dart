@@ -1,3 +1,4 @@
+import '../../design_system.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
@@ -26,11 +27,7 @@ class CSButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         context.tr(text),
-        style: context.theme.textTheme.bodyMedium!.copyWith(
-          color: Colors.white,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
+        style: AppTextStyle.semiBold16(Colors.white),
       ),
     );
   }

@@ -21,20 +21,12 @@ class DetailCoffeeStarRating extends StatelessWidget {
             children: [
               Text(
                 name,
-                style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.thunder,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AppTextStyle.semiBold20(AppColors.thunder),
               ),
               const SizedBox(height: 8),
               Text(
                 context.tr('home.ingredients.with').args([ingredients.join(', ')]),
-                style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.starDust,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: AppTextStyle.regular12(AppColors.starDust),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
                 softWrap: false,
@@ -50,22 +42,17 @@ class DetailCoffeeStarRating extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                         text: '4.8',
-                        style: context.theme.textTheme.bodyMedium
-                            ?.copyWith(color: AppColors.thunder, fontSize: 16, fontWeight: FontWeight.w600, shadows: [
+                        style: AppTextStyle.semiBold16(AppColors.thunder).copyWith(shadows: [
                           Shadow(
                             blurRadius: 4,
                             color: Colors.black.withOpacity(.25),
                             offset: const Offset(0, 4),
-                          )
+                          ),
                         ]),
                         children: [
                           TextSpan(
                             text: ' (230)',
-                            style: context.theme.textTheme.bodyMedium?.copyWith(
-                              color: AppColors.granite,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                            ),
+                            style: AppTextStyle.regular12(AppColors.granite),
                           )
                         ]),
                   ),

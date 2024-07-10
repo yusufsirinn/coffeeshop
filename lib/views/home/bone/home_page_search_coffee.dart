@@ -64,10 +64,6 @@ class HomePageSearchCoffee extends StatelessWidget {
   }
 
   TextStyle? textStyle(BuildContext context) {
-    return context.theme.textTheme.bodyMedium?.copyWith(
-      color: AppColors.mountainMist,
-      fontSize: 14,
-      fontWeight: FontWeight.w400,
-    );
+    return AppTextStyle.regular14(AppColors.mountainMist);
   }
 }

@@ -20,22 +20,13 @@ class OrderCounterTile extends StatelessWidget {
               Text(
                 coffee.title ?? '',
                 maxLines: 1,
-                style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.thunder,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AppTextStyle.semiBold16(AppColors.thunder),
               ),
               const SizedBox(height: 4),
               Text(
                 context.tr('home.ingredients.with').args([coffee.ingredients!.join(', ')]),
                 maxLines: 1,
-                style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.starDust,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                  overflow: TextOverflow.ellipsis,
-                ),
+                style: AppTextStyle.regular12(AppColors.starDust),
               ),
             ],
           ),
@@ -49,11 +40,7 @@ class OrderCounterTile extends StatelessWidget {
               counterButton(AppIcons.minus),
               Text(
                 '1',
-                style: context.theme.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.thunder,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AppTextStyle.semiBold16(AppColors.thunder),
               ),
               counterButton(AppIcons.add),
             ],
