@@ -25,4 +25,5 @@ class AppColors {
   static Color greenishTeal = const Color(0xff36C07E);
   static Color lavender = const Color(0xffDFDFDF);
   static Color platinum = const Color(0xffE4E4E4);
+  static Color osloGrey = const Color(0xff8D8D8D);
 }

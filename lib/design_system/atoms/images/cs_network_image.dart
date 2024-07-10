@@ -1,4 +1,4 @@
-import 'package:coffeeshop/core/core.dart';
+import '../../../core/core.dart';
 import 'package:flutter/material.dart';
 
 class CSNetworkImage extends StatelessWidget {

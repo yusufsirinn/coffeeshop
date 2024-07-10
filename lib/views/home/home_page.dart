@@ -93,18 +93,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-                bottomNavigationBar: CSBottomNavigationBarContainer(
-                  height: 60,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      SvgPicture.asset(AppIcons.home.svg),
-                      SvgPicture.asset(AppIcons.heart.svg),
-                      SvgPicture.asset(AppIcons.bag.svg),
-                      SvgPicture.asset(AppIcons.notification.svg),
-                    ],
-                  ),
-                ),
               ),
             ),
           ],

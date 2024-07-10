@@ -1,5 +1,5 @@
-import 'package:coffeeshop/core/core.dart';
-import 'package:coffeeshop/design_system/design_system.dart';
+import '../../../core/core.dart';
+import '../../design_system.dart';
 import 'package:flutter/material.dart';
 
 class CSEmptyList extends StatelessWidget {

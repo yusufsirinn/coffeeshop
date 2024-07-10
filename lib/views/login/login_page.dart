@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/core.dart';
 import '../../design_system/design_system.dart';
-import '../home/home_page.dart';
+import '../navigation/navigation.dart';
 
 part 'bone/login_background_image.dart';
 part 'bone/login_subtitle.dart';
@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: LoginWithGoogleButton(
                     onTap: () {
-                      AppNavigator.instance.goAndRemove(const HomePage());
+                      AppNavigator.instance.goAndRemove(const Navigation());
                     },
                   ),
                 )
