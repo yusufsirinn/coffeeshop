@@ -7,18 +7,21 @@ class LoginBackgroundImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
+    return SizedBox.expand(
       child: ClipRect(
         child: FittedBox(
           fit: BoxFit.fitWidth,
-          child: Align(
-            alignment: Alignment.bottomCenter,
-            heightFactor: .85,
-            widthFactor: .95,
-            child: Center(
-              child: Image.asset(AppImages.coffeeSoGood.png),
-            ),
+          child: Column(
+            children: [
+              Align(
+                alignment: Alignment.bottomCenter,
+                heightFactor: .70,
+                widthFactor: .90,
+                child: Center(
+                  child: Image.asset(AppImages.coffeeSoGood.png),
+                ),
+              ),
+            ],
           ),
         ),
       ),
