@@ -15,11 +15,11 @@ class HomePageCoffeeTypes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 38,
+      height: AppDimension.x36,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: coffees.length,
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
         shrinkWrap: true,
         separatorBuilder: (_, __) {
           return const SizedBox(width: 7);
@@ -31,11 +31,11 @@ class HomePageCoffeeTypes extends StatelessWidget {
             },
             child: Container(
               padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 10,
+                horizontal: AppDimension.x16,
+                vertical: AppDimension.x10,
               ),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(AppDimension.x12),
                 color: i == selectedIndex ? AppColors.orangeSalmon : AppColors.aquaHaze,
               ),
               child: Text(

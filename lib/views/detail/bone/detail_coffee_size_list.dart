@@ -67,7 +67,7 @@ class CoffeeSizeTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         border: Border.all(color: borderColor),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(AppDimension.x12),
       ),
       child: Center(
         child: Text(

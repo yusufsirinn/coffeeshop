@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/core.dart';
+import '../../design_system.dart';
 
 class LoginWithGoogleButton extends StatelessWidget {
   final Function() onTap;
@@ -16,9 +17,9 @@ class LoginWithGoogleButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 54,
+        height: AppDimension.x54,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(AppDimension.x10),
           color: Colors.white,
         ),
         child: Row(
@@ -26,21 +27,21 @@ class LoginWithGoogleButton extends StatelessWidget {
           children: [
             SvgPicture.asset(
               AppIcons.googleLogo.svg,
-              height: 24,
-              width: 24,
+              height: AppDimension.x24,
+              width: AppDimension.x24,
             ),
-            const SizedBox(width: 15),
+            const SizedBox(width: AppDimension.x16),
             Text(
               context.tr('login.button'),
               textAlign: TextAlign.center,
               style: GoogleFonts.roboto().copyWith(
                 color: Colors.black54,
-                fontSize: 20,
+                fontSize: AppDimension.x20,
                 fontWeight: FontWeight.w500,
                 letterSpacing: .01,
               ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: AppDimension.x10),
           ],
         ),
       ),

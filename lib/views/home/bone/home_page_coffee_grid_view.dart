@@ -12,7 +12,7 @@ class HomePageCoffeeGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
+      padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -26,19 +26,19 @@ class HomePageCoffeeGridView extends StatelessWidget {
         Coffee coffee = coffees[i];
         return Container(
           padding: const EdgeInsets.only(
-            left: 4,
-            right: 4,
-            top: 4,
+            left: AppDimension.x4,
+            right: AppDimension.x4,
+            top: AppDimension.x4,
           ),
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(AppDimension.x20),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppDimension.x16),
                 child: Stack(
                   children: [
                     AspectRatio(
@@ -46,7 +46,7 @@ class HomePageCoffeeGridView extends StatelessWidget {
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(AppDimension.x16),
                         ),
                         child: CSNetworkImage(image: coffee.image),
                       ),
@@ -54,22 +54,22 @@ class HomePageCoffeeGridView extends StatelessWidget {
                     ClipRRect(
                       borderRadius: const BorderRadius.only(bottomRight: Radius.circular(20)),
                       child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                        filter: ImageFilter.blur(sigmaX: AppDimension.x10, sigmaY: AppDimension.x10),
                         child: Container(
-                          width: 51,
-                          height: 25,
+                          width: AppDimension.x54,
+                          height: AppDimension.x24,
                           decoration: BoxDecoration(
                               color: Colors.black.withOpacity(.16),
-                              borderRadius: const BorderRadius.only(bottomRight: Radius.circular(20))),
+                              borderRadius: const BorderRadius.only(bottomRight: Radius.circular(AppDimension.x24))),
                           child: Center(
                             child: Padding(
-                              padding: const EdgeInsets.only(left: 8),
+                              padding: const EdgeInsets.only(left: AppDimension.x8),
                               child: Row(
                                 children: [
                                   SvgPicture.asset(
                                     AppIcons.star.svg,
                                   ),
-                                  const SizedBox(width: 2),
+                                  const SizedBox(width: AppDimension.x2),
                                   Text(
                                     '4.8',
                                     style: AppTextStyle.semiBold10(Colors.white),
@@ -85,11 +85,11 @@ class HomePageCoffeeGridView extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 11),
+                padding: const EdgeInsets.only(left: AppDimension.x12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SizedBox(height: 6),
+                    const SizedBox(height: AppDimension.x6),
                     Text(
                       coffee.title ?? '',
                       maxLines: 1,
@@ -103,9 +103,9 @@ class HomePageCoffeeGridView extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: AppDimension.x16),
               Padding(
-                padding: const EdgeInsets.only(left: 15, right: 8),
+                padding: const EdgeInsets.only(left: AppDimension.x16, right: AppDimension.x8),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -119,12 +119,12 @@ class HomePageCoffeeGridView extends StatelessWidget {
                         onTap(i);
                       },
                       child: Container(
-                        width: 32,
-                        height: 32,
-                        padding: const EdgeInsets.all(8),
+                        width: AppDimension.x32,
+                        height: AppDimension.x32,
+                        padding: const EdgeInsets.all(AppDimension.x8),
                         decoration: BoxDecoration(
                           color: AppColors.orangeSalmon,
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(AppDimension.x10),
                         ),
                         child: SvgPicture.asset(
                           AppIcons.plus.svg,

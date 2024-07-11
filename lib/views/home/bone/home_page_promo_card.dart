@@ -11,7 +11,7 @@ class HomePagePromoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 30,
+        horizontal: AppDimension.x30,
       ),
       child: SizedBox(
         height: 140,
@@ -23,30 +23,30 @@ class HomePagePromoCard extends StatelessWidget {
                   image: AssetImage(AppImages.promoCoffee.png),
                   fit: BoxFit.fill,
                 ),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppDimension.x16),
               ),
             ),
             Positioned(
-              left: 23,
-              top: 13,
+              left: AppDimension.x24,
+              top: AppDimension.x12,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      vertical: 4,
-                      horizontal: 6,
+                      vertical: AppDimension.x4,
+                      horizontal: AppDimension.x6,
                     ),
                     decoration: BoxDecoration(
                       color: AppColors.valentineRed,
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(AppDimension.x8),
                     ),
                     child: Text(
                       context.tr('home.promoCard.text'),
                       style: AppTextStyle.semiBold14(Colors.white),
                     ),
                   ),
-                  const SizedBox(height: 13),
+                  const SizedBox(height: AppDimension.x12),
                   Column(
                     children: [
                       CSTextWithBackgroundPainter(

@@ -16,17 +16,17 @@ class DeliveryPersonalTile extends StatelessWidget {
     return Row(
       children: [
         Container(
-          width: 48,
-          height: 48,
+          width: AppDimension.x48,
+          height: AppDimension.x48,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(image),
               fit: BoxFit.fill,
             ),
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(AppDimension.x14),
           ),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: AppDimension.x12),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +35,7 @@ class DeliveryPersonalTile extends StatelessWidget {
               name,
               style: AppTextStyle.semiBold16(AppColors.gunmetal),
             ),
-            const SizedBox(width: 8),
+            const SizedBox(width: AppDimension.x8),
             Text(
               info,
               style: AppTextStyle.regular12(AppColors.granite),
@@ -44,12 +44,12 @@ class DeliveryPersonalTile extends StatelessWidget {
         ),
         const Spacer(),
         Container(
-          width: 54,
-          height: 54,
-          padding: const EdgeInsets.all(15),
+          width: AppDimension.x54,
+          height: AppDimension.x54,
+          padding: const EdgeInsets.all(AppDimension.x16),
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(AppDimension.x14),
             border: Border.all(color: AppColors.greenWhite),
           ),
           child: SvgPicture.asset(AppIcons.telephone.svg),

@@ -78,8 +78,8 @@ class _DetailPageState extends State<DetailPage> {
       height: 110,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 30,
-          vertical: 20,
+          horizontal: AppDimension.x30,
+          vertical: AppDimension.x20,
         ),
         child: Row(
           mainAxisSize: MainAxisSize.max,
@@ -94,14 +94,14 @@ class _DetailPageState extends State<DetailPage> {
                   context.tr('detail.navBar.price'),
                   style: AppTextStyle.regular14(AppColors.starDust),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppDimension.x8),
                 Text(
                   r'$ ' + context.watch<CoffeeBloc>().state.selectedCoffee.price.toString(),
                   style: AppTextStyle.semiBold18(AppColors.orangeSalmon),
                 ),
               ],
             ),
-            const SizedBox(width: 45),
+            const SizedBox(width: AppDimension.x44),
             Expanded(
               child: CSButton(
                 text: 'detail.navBar.button',

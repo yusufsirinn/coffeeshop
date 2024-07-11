@@ -9,7 +9,7 @@ class DeliveryAppBar extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(
           vertical: 17,
-          horizontal: 30,
+          horizontal: AppDimension.x30,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,17 +29,17 @@ class DeliveryAppBar extends StatelessWidget {
 
   Container appBarIcon(AppIcons icon) {
     return Container(
-      width: 44,
-      height: 44,
-      padding: const EdgeInsets.all(10),
+      width: AppDimension.x44,
+      height: AppDimension.x44,
+      padding: const EdgeInsets.all(AppDimension.x10),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(AppDimension.x14),
         boxShadow: [
           BoxShadow(
             color: AppColors.plantation.withOpacity(.25),
-            blurRadius: 24,
-            offset: const Offset(0, 4),
+            blurRadius: AppDimension.x24,
+            offset: const Offset(AppDimension.zero, AppDimension.x4),
           )
         ],
       ),

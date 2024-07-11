@@ -9,8 +9,8 @@ class LoginTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        left: 24,
-        right: 15,
+        left: AppDimension.x24,
+        right: AppDimension.x16,
       ),
       child: Text(
         context.tr('login.title'),

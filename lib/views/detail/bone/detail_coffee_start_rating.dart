@@ -23,7 +23,7 @@ class DetailCoffeeStarRating extends StatelessWidget {
                 name,
                 style: AppTextStyle.semiBold20(AppColors.thunder),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: AppDimension.x8),
               Text(
                 context.tr('home.ingredients.with').args([ingredients.join(', ')]),
                 style: AppTextStyle.regular12(AppColors.starDust),
@@ -31,22 +31,22 @@ class DetailCoffeeStarRating extends StatelessWidget {
                 maxLines: 1,
                 softWrap: false,
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: AppDimension.x16),
               Row(
                 children: [
                   SvgPicture.asset(
                     AppIcons.star.svg,
-                    height: 20,
+                    height: AppDimension.x20,
                   ),
-                  const SizedBox(width: 4),
+                  const SizedBox(width: AppDimension.x4),
                   RichText(
                     text: TextSpan(
                         text: '4.8',
                         style: AppTextStyle.semiBold16(AppColors.thunder).copyWith(shadows: [
                           Shadow(
-                            blurRadius: 4,
+                            blurRadius: AppDimension.x4,
                             color: Colors.black.withOpacity(.25),
-                            offset: const Offset(0, 4),
+                            offset: const Offset(AppDimension.zero, AppDimension.x4),
                           ),
                         ]),
                         children: [
@@ -64,30 +64,30 @@ class DetailCoffeeStarRating extends StatelessWidget {
         Row(
           children: [
             Container(
-              width: 44,
-              height: 44,
-              padding: const EdgeInsets.all(10),
+              width: AppDimension.x44,
+              height: AppDimension.x44,
+              padding: const EdgeInsets.all(AppDimension.x10),
               decoration: BoxDecoration(
                 color: AppColors.forgotMeNot,
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(AppDimension.x14),
               ),
               child: Image.asset(
                 AppImages.bean.png,
-                height: 24,
+                height: AppDimension.x24,
               ),
             ),
-            const SizedBox(width: 15),
+            const SizedBox(width: AppDimension.x16),
             Container(
-              width: 44,
-              height: 44,
-              padding: const EdgeInsets.all(10),
+              width: AppDimension.x44,
+              height: AppDimension.x44,
+              padding: const EdgeInsets.all(AppDimension.x10),
               decoration: BoxDecoration(
                 color: AppColors.forgotMeNot,
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(AppDimension.x14),
               ),
               child: Image.asset(
                 AppImages.milk.png,
-                height: 24,
+                height: AppDimension.x24,
               ),
             ),
           ],

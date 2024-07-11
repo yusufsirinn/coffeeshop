@@ -12,7 +12,7 @@ class OrderCounterTile extends StatelessWidget {
     return Row(
       children: [
         coffeeImage(coffee.image),
-        const SizedBox(width: 21),
+        const SizedBox(width: AppDimension.x20),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,7 +22,7 @@ class OrderCounterTile extends StatelessWidget {
                 maxLines: 1,
                 style: AppTextStyle.semiBold16(AppColors.thunder),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: AppDimension.x4),
               Text(
                 context.tr('home.ingredients.with').args([coffee.ingredients!.join(', ')]),
                 maxLines: 1,
@@ -31,7 +31,7 @@ class OrderCounterTile extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(width: 8),
+        const SizedBox(width: AppDimension.x8),
         SizedBox(
           width: 90,
           child: Row(
@@ -52,9 +52,9 @@ class OrderCounterTile extends StatelessWidget {
 
   Container counterButton(AppIcons icon) {
     return Container(
-      width: 30,
-      height: 30,
-      padding: const EdgeInsets.all(6),
+      width: AppDimension.x30,
+      height: AppDimension.x30,
+      padding: const EdgeInsets.all(AppDimension.x6),
       decoration: BoxDecoration(
         color: Colors.white,
         shape: BoxShape.circle,
@@ -68,9 +68,9 @@ class OrderCounterTile extends StatelessWidget {
 
   Widget coffeeImage(String? image) {
     return SizedBox.square(
-      dimension: 54,
+      dimension: AppDimension.x54,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppDimension.x16),
         child: CSNetworkImage(
           image: image,
         ),

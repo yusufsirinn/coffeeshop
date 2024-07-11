@@ -48,7 +48,7 @@ class _DeliveryPageState extends State<DeliveryPage> {
               initialChildSize: maxSize,
               builder: (BuildContext context, scrollController) {
                 return Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
@@ -61,17 +61,17 @@ class _DeliveryPageState extends State<DeliveryPage> {
                             Container(
                               decoration: BoxDecoration(
                                 color: AppColors.greenWhite,
-                                borderRadius: const BorderRadius.all(Radius.circular(10)),
+                                borderRadius: const BorderRadius.all(Radius.circular(AppDimension.x10)),
                               ),
-                              height: 6,
-                              width: 44,
-                              margin: const EdgeInsets.symmetric(vertical: 10),
+                              height: AppDimension.x6,
+                              width: AppDimension.x44,
+                              margin: const EdgeInsets.symmetric(vertical: AppDimension.x10),
                             ),
                             Text(
                               context.tr('delivery.order.time'),
                               style: AppTextStyle.semiBold16(AppColors.gunmetal),
                             ),
-                            const SizedBox(height: 6),
+                            const SizedBox(height: AppDimension.x6),
                             RichText(
                               text: TextSpan(
                                 text: context.tr('delivery.order.deliver'),
@@ -84,14 +84,14 @@ class _DeliveryPageState extends State<DeliveryPage> {
                                 ],
                               ),
                             ),
-                            const SizedBox(height: 15),
+                            const SizedBox(height: AppDimension.x16),
                             const CSStepper(
                               currentStep: 3,
                               totalStep: 4,
                             ),
-                            const SizedBox(height: 15),
+                            const SizedBox(height: AppDimension.x16),
                             const DeliveryOrderTile(),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: AppDimension.x20),
                             DeliveryPersonalTile(
                               name: context.tr('delivery.personal.name'),
                               info: context.tr('delivery.personal.info'),

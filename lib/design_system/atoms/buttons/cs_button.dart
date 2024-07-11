@@ -17,11 +17,11 @@ class CSButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.orangeSalmon,
-        elevation: 0,
-        minimumSize: const Size(0, 55),
-        maximumSize: const Size(double.infinity, 55),
+        elevation: AppDimension.zero,
+        minimumSize: const Size(AppDimension.zero, AppDimension.x56),
+        maximumSize: const Size(double.infinity, AppDimension.x56),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppDimension.x16),
         ),
       ),
       onPressed: onPressed,

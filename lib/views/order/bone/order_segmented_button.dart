@@ -18,7 +18,7 @@ class OrderSegmentedButton extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: CupertinoSlidingSegmentedControl<String>(
-        padding: const EdgeInsets.all(4),
+        padding: const EdgeInsets.all(AppDimension.x4),
         groupValue: selectedGroup,
         children: map,
         backgroundColor: AppColors.seashell,
@@ -32,13 +32,13 @@ class OrderSegmentedButton extends StatelessWidget {
     var isSelected = selectedGroup == text;
     return {
       text: SizedBox(
-        height: 40,
+        height: AppDimension.x40,
         child: Center(
           child: Text(
             text,
             style: AppTextStyle.semiBold16(Colors.white).copyWith(
               color: isSelected ? Colors.white : AppColors.thunder,
-              fontSize: 16,
+              fontSize: AppDimension.x16,
               fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
             ),
           ),

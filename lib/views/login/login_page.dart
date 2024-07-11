@@ -28,12 +28,12 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 const LoginTitle(),
-                const SizedBox(height: 17),
+                const SizedBox(height: AppDimension.x16),
                 const LoginSubtitle(),
-                const SizedBox(height: 17),
+                const SizedBox(height: AppDimension.x16),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 30,
+                    horizontal: AppDimension.x30,
                   ),
                   child: LoginWithGoogleButton(
                     onTap: () {

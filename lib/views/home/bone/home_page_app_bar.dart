@@ -9,7 +9,7 @@ class HomePageAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 30,
+        horizontal: AppDimension.x30,
       ),
       child: Row(
         children: [
@@ -31,14 +31,14 @@ class HomePageAppBar extends StatelessWidget {
 
   Container profileImage() {
     return Container(
-      width: 44,
-      height: 44,
+      width: AppDimension.x44,
+      height: AppDimension.x44,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(AppImages.profilePhoto.png),
           fit: BoxFit.fill,
         ),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(AppDimension.x12),
       ),
     );
   }
@@ -50,7 +50,7 @@ class HomePageAppBar extends StatelessWidget {
           context.tr('home.appBar.subtitle'),
           style: AppTextStyle.semiBold14(Colors.white),
         ),
-        const SizedBox(width: 2),
+        const SizedBox(width: AppDimension.x2),
         SvgPicture.asset(AppIcons.arrowDown.svg)
       ],
     );

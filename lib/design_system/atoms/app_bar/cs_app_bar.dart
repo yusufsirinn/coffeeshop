@@ -17,7 +17,7 @@ class CSAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -44,6 +44,6 @@ class CSAppBar extends StatelessWidget {
     if (trailing != null) {
       return trailing!;
     }
-    return const SizedBox(width: 24);
+    return const SizedBox(width: AppDimension.x24);
   }
 }

@@ -11,8 +11,8 @@ class OrderBottomNavigationBar extends StatelessWidget {
       height: 140,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 30,
-          vertical: 15,
+          horizontal: AppDimension.x30,
+          vertical: AppDimension.x16,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -20,23 +20,23 @@ class OrderBottomNavigationBar extends StatelessWidget {
             Row(
               children: [
                 SvgPicture.asset(AppIcons.moneys.svg),
-                const SizedBox(width: 22),
+                const SizedBox(width: AppDimension.x22),
                 Container(
-                  height: 24,
+                  height: AppDimension.x24,
                   decoration: BoxDecoration(
                     color: AppColors.springWood,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(AppDimension.x20),
                   ),
                   child: Row(
                     children: [
                       Container(
-                        height: 24,
+                        height: AppDimension.x24,
                         decoration: BoxDecoration(
                           color: AppColors.orangeSalmon,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(AppDimension.x20),
                         ),
                         alignment: Alignment.center,
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: AppDimension.x10),
                         child: Text(
                           context.tr('order.navBar.paymentType'),
                           style: AppTextStyle.regular12(Colors.white),
@@ -44,8 +44,8 @@ class OrderBottomNavigationBar extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                          left: 10,
-                          right: 14,
+                          left: AppDimension.x10,
+                          right: AppDimension.x16,
                         ),
                         child: Text(
                           r'$ 5.53',
@@ -59,7 +59,7 @@ class OrderBottomNavigationBar extends StatelessWidget {
                 SvgPicture.asset(AppIcons.dots.svg),
               ],
             ),
-            const SizedBox(height: 17),
+            const SizedBox(height: AppDimension.x16),
             CSButton(
               text: 'order.navBar.button',
               onPressed: () {

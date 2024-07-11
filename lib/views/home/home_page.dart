@@ -48,9 +48,9 @@ class _HomePageState extends State<HomePage> {
                 backgroundColor: Colors.transparent,
                 body: Column(
                   children: [
-                    const SizedBox(height: 62),
+                    const SizedBox(height: AppDimension.x60),
                     const HomePageAppBar(),
-                    const SizedBox(height: 26),
+                    const SizedBox(height: AppDimension.x28),
                     HomePageSearchCoffee(
                       onChanged: (value) {
                         context.read<CoffeeBloc>().add(CoffeeSearch(value));
@@ -62,18 +62,18 @@ class _HomePageState extends State<HomePage> {
                         success: SingleChildScrollView(
                           child: Column(
                             children: [
-                              const SizedBox(height: 26),
+                              const SizedBox(height: AppDimension.x26),
                               HomePagePromoCard(
                                 text: context.tr('home.promoCard.info'),
                               ),
-                              const SizedBox(height: 25),
+                              const SizedBox(height: AppDimension.x26),
                               HomePageCoffeeTypes(
                                 selectedIndex: context.watch<CoffeeBloc>().state.selectedCoffeeCategoryIndex ?? 0,
                                 coffees:
                                     context.watch<CoffeeBloc>().state.coffees?.map((c) => c.title ?? '').toList() ?? [],
                                 onTap: (index) => context.read<CoffeeBloc>().add(CoffeeCategory(index)),
                               ),
-                              const SizedBox(height: 17),
+                              const SizedBox(height: AppDimension.x16),
                               CSEmptyList(
                                 list: state.searchedCoffeeList,
                                 child: HomePageCoffeeGridView(

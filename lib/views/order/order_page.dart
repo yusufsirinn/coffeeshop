@@ -29,7 +29,7 @@ class _OrderPageState extends State<OrderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size(double.infinity, 24),
+        preferredSize: const Size(double.infinity, AppDimension.x24),
         child: CSAppBar(
           title: context.tr('order.title'),
         ),
@@ -40,7 +40,7 @@ class _OrderPageState extends State<OrderPage> {
             deliver(),
             CSDivider(
               color: AppColors.whiteSmoke,
-              thickness: 4,
+              thickness: AppDimension.x4,
             ),
             payment()
           ],
@@ -53,11 +53,11 @@ class _OrderPageState extends State<OrderPage> {
   Padding deliver() {
     var coffee = context.watch<CoffeeBloc>().state.selectedCoffee;
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
+      padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 26),
+          const SizedBox(height: AppDimension.x26),
           OrderSegmentedButton(
             selectedGroup: selectedGroup,
             groups: const [
@@ -72,30 +72,30 @@ class _OrderPageState extends State<OrderPage> {
               );
             },
           ),
-          const SizedBox(height: 31),
+          const SizedBox(height: AppDimension.x30),
           const OrderTitle(text: 'order.address.title'),
-          const SizedBox(height: 14),
-          const OrderTitle(text: 'order.address.address', fontSize: 14),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppDimension.x14),
+          const OrderTitle(text: 'order.address.address', fontSize: AppDimension.x14),
+          const SizedBox(height: AppDimension.x14),
           Text(
             context.tr('order.address.addressPart'),
             style: AppTextStyle.regular12(AppColors.granite),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: AppDimension.x16),
           const Wrap(
             direction: Axis.horizontal,
-            runSpacing: 8,
-            spacing: 8,
+            runSpacing: AppDimension.x8,
+            spacing: AppDimension.x8,
             children: [
               CSChip(icon: AppIcons.edit, text: 'order.chip.editAddress'),
               CSChip(icon: AppIcons.note, text: 'order.chip.addNote'),
             ],
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: AppDimension.x16),
           const CSDivider(),
-          const SizedBox(height: 32),
+          const SizedBox(height: AppDimension.x32),
           OrderCounterTile(coffee: coffee),
-          const SizedBox(height: 21),
+          const SizedBox(height: AppDimension.x20),
         ],
       ),
     );
@@ -103,49 +103,49 @@ class _OrderPageState extends State<OrderPage> {
 
   Padding payment() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
+      padding: const EdgeInsets.symmetric(horizontal: AppDimension.x30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 15),
+          const SizedBox(height: AppDimension.x16),
           Container(
-            height: 56,
-            padding: const EdgeInsets.all(16),
+            height: AppDimension.x56,
+            padding: const EdgeInsets.all(AppDimension.x16),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(AppDimension.x14),
               border: Border.all(color: AppColors.greenWhite),
             ),
             child: Row(
               children: [
                 SvgPicture.asset(AppIcons.discount.svg),
-                const SizedBox(width: 12),
-                const OrderTitle(text: 'order.discount.text', fontSize: 14),
+                const SizedBox(width: AppDimension.x12),
+                const OrderTitle(text: 'order.discount.text', fontSize: AppDimension.x14),
                 const Spacer(),
                 SvgPicture.asset(AppIcons.arrowRight.svg),
               ],
             ),
           ),
-          const SizedBox(height: 21),
+          const SizedBox(height: AppDimension.x20),
           const OrderTitle(text: 'order.payment.title'),
-          const SizedBox(height: 9),
+          const SizedBox(height: AppDimension.x8),
           const OrderPriceText(
             text: 'order.payment.price',
             price: r'$ 4.53',
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppDimension.x14),
           const OrderPriceText(
             text: 'order.payment.delivery',
             price: r'$ 1.0',
             discount: r'$ 2.0',
           ),
-          const SizedBox(height: 21),
+          const SizedBox(height: AppDimension.x20),
           Divider(
             height: 0,
             color: AppColors.greenWhite,
             thickness: 1,
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppDimension.x14),
           const OrderPriceText(
             text: 'order.payment.total',
             price: r'$ 5.53',

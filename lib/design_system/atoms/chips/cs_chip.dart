@@ -18,10 +18,10 @@ class CSChip extends StatelessWidget {
     return IntrinsicWidth(
       child: Container(
         height: 27,
-        padding: const EdgeInsets.symmetric(horizontal: 12),
+        padding: const EdgeInsets.symmetric(horizontal: AppDimension.x12),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppDimension.x16),
           border: Border.all(
             color: AppColors.gainsboro,
           ),
@@ -29,7 +29,7 @@ class CSChip extends StatelessWidget {
         child: Row(
           children: [
             SvgPicture.asset(icon.svg),
-            const SizedBox(width: 4),
+            const SizedBox(width: AppDimension.x4),
             Text(
               context.tr(text),
               style: AppTextStyle.regular12(AppColors.gunmetal),

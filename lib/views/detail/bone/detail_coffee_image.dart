@@ -10,7 +10,7 @@ class DetailCoffeeImage extends StatelessWidget {
       height: 226,
       width: double.infinity,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppDimension.x16),
         child: CSNetworkImage(
           image: imageUrl,
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
+import '../../design_system.dart';
 
 class CSDivider extends StatelessWidget {
   final Color? color;
@@ -8,13 +9,13 @@ class CSDivider extends StatelessWidget {
   const CSDivider({
     super.key,
     this.color,
-    this.thickness = 1,
+    this.thickness = AppDimension.x1,
   });
 
   @override
   Widget build(BuildContext context) {
     return Divider(
-      height: 0,
+      height: AppDimension.zero,
       color: color ?? AppColors.greenWhite,
       thickness: thickness,
     );

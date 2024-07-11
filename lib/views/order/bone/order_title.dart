@@ -7,7 +7,7 @@ class OrderTitle extends StatelessWidget {
   const OrderTitle({
     super.key,
     required this.text,
-    this.fontSize = 16,
+    this.fontSize = AppDimension.x16,
   });
 
   @override

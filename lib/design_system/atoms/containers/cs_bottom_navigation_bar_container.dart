@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
+import '../../design_system.dart';
 
 class CSBottomNavigationBarContainer extends StatelessWidget {
   final Widget child;
@@ -8,7 +9,7 @@ class CSBottomNavigationBarContainer extends StatelessWidget {
   const CSBottomNavigationBarContainer({
     super.key,
     required this.child,
-    this.height = 60,
+    this.height = AppDimension.x60,
   });
 
   @override
@@ -17,8 +18,8 @@ class CSBottomNavigationBarContainer extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.only(
-          topRight: Radius.circular(20),
-          topLeft: Radius.circular(20),
+          topRight: Radius.circular(AppDimension.x20),
+          topLeft: Radius.circular(AppDimension.x20),
         ),
         border: Border(
           top: BorderSide(color: AppColors.seashell),

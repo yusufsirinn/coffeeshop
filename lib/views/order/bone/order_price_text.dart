@@ -21,7 +21,7 @@ class OrderPriceText extends StatelessWidget {
           style: AppTextStyle.regular14(AppColors.thunder),
         ),
         const Spacer(),
-        if (discount != null) const SizedBox(width: 8),
+        if (discount != null) const SizedBox(width: AppDimension.x8),
         if (discount != null)
           Text(
             discount!,
@@ -29,7 +29,7 @@ class OrderPriceText extends StatelessWidget {
               decoration: TextDecoration.lineThrough,
             ),
           ),
-        const SizedBox(width: 8),
+        const SizedBox(width: AppDimension.x8),
         Text(
           price,
           style: AppTextStyle.semiBold14(

@@ -4,6 +4,7 @@ export '../design_system/atoms/buttons/login_with_google_button.dart';
 export '../design_system/atoms/chips/cs_chip.dart';
 export '../design_system/atoms/dividers/cs_divider.dart';
 export '../design_system/atoms/stepper/cs_stepper.dart';
+export '../design_system/dimension/app_dimension.dart';
 export 'atoms/containers/cs_bottom_navigation_bar_container.dart';
 export 'atoms/images/cs_network_image.dart';
 export 'atoms/indicators/cs_indicator.dart';

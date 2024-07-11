@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/app_colors.dart';
+import '../../design_system.dart';
 
 class CSIndicator extends StatelessWidget {
   final Color? color;
@@ -10,7 +11,7 @@ class CSIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox.square(
-        dimension: 32,
+        dimension: AppDimension.x32,
         child: CircularProgressIndicator(
           color: color ?? AppColors.orangeSalmon,
         ),

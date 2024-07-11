@@ -11,10 +11,10 @@ class HomePageSearchCoffee extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 30,
+        horizontal: AppDimension.x30,
       ),
       child: SizedBox(
-        height: 52,
+        height: AppDimension.x52,
         child: TextField(
           onChanged: onChanged,
           style: textStyle(context),
@@ -30,10 +30,10 @@ class HomePageSearchCoffee extends StatelessWidget {
             labelStyle: textStyle(context),
             prefixIcon: Padding(
               padding: const EdgeInsets.only(
-                top: 16,
-                bottom: 16,
-                left: 21,
-                right: 12,
+                top: AppDimension.x16,
+                bottom: AppDimension.x16,
+                left: AppDimension.x20,
+                right: AppDimension.x12,
               ),
               child: SvgPicture.asset(
                 AppIcons.searchNormal.svg,
@@ -41,19 +41,19 @@ class HomePageSearchCoffee extends StatelessWidget {
             ),
             border: OutlineInputBorder(
               borderSide: BorderSide.none,
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(AppDimension.x16),
             ),
             suffixIcon: Container(
-              width: 44,
-              height: 44,
+              width: AppDimension.x44,
+              height: AppDimension.x44,
               margin: const EdgeInsets.symmetric(
-                vertical: 4,
-                horizontal: 5,
+                vertical: AppDimension.x4,
+                horizontal: AppDimension.x4,
               ),
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.all(AppDimension.x12),
               decoration: BoxDecoration(
                 color: AppColors.orangeSalmon,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(AppDimension.x12),
               ),
               child: SvgPicture.asset(AppIcons.filter.svg),
             ),

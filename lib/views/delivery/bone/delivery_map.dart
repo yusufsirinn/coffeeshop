@@ -22,14 +22,14 @@ class DeliveryMap extends StatelessWidget {
       children: [
         TileLayer(
           urlTemplate: AppConstants.mapURL,
-          maxZoom: 20,
+          maxZoom: AppDimension.x20,
         ),
         PolylineLayer(
           polylines: [
             Polyline(
               points: routePoints,
               color: AppColors.orangeSalmon,
-              strokeWidth: 4,
+              strokeWidth: AppDimension.x4,
             ),
           ],
         ),
@@ -44,17 +44,17 @@ class DeliveryMap extends StatelessWidget {
       markers: [
         Marker(
           point: routePoints.first,
-          width: 36,
-          height: 36,
+          width: AppDimension.x36,
+          height: AppDimension.x36,
           child: Container(
-            width: 36,
-            height: 36,
-            padding: const EdgeInsets.all(8),
+            width: AppDimension.x36,
+            height: AppDimension.x36,
+            padding: const EdgeInsets.all(AppDimension.x8),
             decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [
               BoxShadow(
                 color: AppColors.pinkSwan.withOpacity(.25),
-                blurRadius: 4,
-                offset: const Offset(0, 4),
+                blurRadius: AppDimension.x4,
+                offset: const Offset(AppDimension.zero, AppDimension.x4),
               )
             ]),
             child: Transform.flip(
@@ -75,8 +75,8 @@ class DeliveryMap extends StatelessWidget {
         Marker(
           alignment: Alignment.topCenter,
           point: routePoints.last,
-          width: 24,
-          height: 24,
+          width: AppDimension.x24,
+          height: AppDimension.x24,
           child: SvgPicture.asset(AppIcons.pin.svg),
         ),
       ],

@@ -34,7 +34,7 @@ class _NavigationState extends State<Navigation> {
       body: _pages[selectedPage],
       bottomNavigationBar: SafeArea(
         child: CSBottomNavigationBarContainer(
-          height: 60,
+          height: AppDimension.x60,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [..._pages.keys.map((i) => iconButton(i))],
@@ -56,7 +56,7 @@ class _NavigationState extends State<Navigation> {
           BlendMode.srcIn,
         ),
         theme: const SvgTheme(
-          fontSize: 24,
+          fontSize: AppDimension.x24,
         ),
       ),
     );

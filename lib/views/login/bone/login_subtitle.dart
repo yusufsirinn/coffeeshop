@@ -9,7 +9,7 @@ class LoginSubtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 30,
+        horizontal: AppDimension.x30,
       ),
       child: Text(
         context.tr('login.subtitle'),
