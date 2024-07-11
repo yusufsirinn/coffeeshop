@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider<CoffeeBloc>(
           create: (context) => CoffeeBloc(
-            service: DummyCoffeeService(),
+            service: CoffeeService(),
           ),
         ),
       ],
