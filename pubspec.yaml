@@ -9,19 +9,32 @@ environment:
   sdk: '>=3.4.3 <4.0.0'
 
 dependencies:
+  # Flutter SDK
   flutter:
     sdk: flutter
+  
+  # Design
   cupertino_icons: ^1.0.6
   google_fonts: ^6.2.1
   flutter_svg: ^2.0.10+1
+  
+  # Map
   flutter_map: ^7.0.2
   latlong2: ^0.9.1
+  
+  # Localization
   flutter_localizations:
     sdk: flutter
   intl: ^0.19.0
+  
+  # HTTP / Network
   dio: ^5.5.0+1
+  
+  # State Management
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
+  
+  # Utility
   equatable: ^2.0.5
 
 dev_dependencies:
