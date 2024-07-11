@@ -8,8 +8,8 @@ import '../../../design_system/design_system.dart';
 import '../order/order_page.dart';
 
 part '../detail/bone/detail_coffee_image.dart';
-part '../detail/bone/detail_coffee_start_rating.dart';
 part '../detail/bone/detail_coffee_size_list.dart';
+part '../detail/bone/detail_coffee_start_rating.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({super.key});

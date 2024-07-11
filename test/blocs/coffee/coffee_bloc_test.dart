@@ -9,7 +9,7 @@ import 'package:test/test.dart';
 import '../../test_utils/mock_services.dart';
 
 void main() {
-  group('CoffeeBloc', () {
+  group('CoffeeBloc -', () {
     var state = const CoffeeState();
     late ICoffeeService service;
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../core.dart';
 
 extension ContextExtensions on BuildContext {
-  String tr(String text) => AppLocalizations.of(this)?.translate(text) ?? '';
+  String tr(String text) => AppLocalizations.of(this)?.translate(text) ?? text;
   MediaQueryData get mediaQuery => MediaQuery.of(this);
   ThemeData get theme => Theme.of(this);
 

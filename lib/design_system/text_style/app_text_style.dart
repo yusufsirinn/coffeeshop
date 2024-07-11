@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyle {
-  static final TextStyle _font = GoogleFonts.sora();
+  static late TextStyle _font;
+
+  static setFontFamily(TextStyle font) {
+    _font = font;
+  }
 
   static TextStyle regular12(Color color) {
     return _font.copyWith(

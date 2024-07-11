@@ -1,5 +1,6 @@
-import '../../../core/core.dart';
 import 'package:flutter/material.dart';
+
+import '../../../core/core.dart';
 
 class CSNetworkImage extends StatelessWidget {
   final String? image;

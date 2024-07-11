@@ -16,3 +16,4 @@ export '../core/managers/network/network_service.dart';
 export '../core/utils/logger.dart';
 export '../core/utils/view_state_widget.dart';
 export 'enums/app_images_enum.dart';
+export 'init/app_setup.dart';

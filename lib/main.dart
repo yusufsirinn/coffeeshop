@@ -7,7 +7,8 @@ import 'core/core.dart';
 import 'services/coffee/coffee_service.dart';
 import 'views/login/login_page.dart';
 
-void main() {
+Future<void> main() async {
+  await AppSetup.init();
   runApp(const MyApp());
 }
 
