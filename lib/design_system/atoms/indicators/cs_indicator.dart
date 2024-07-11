@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/constants/app_colors.dart';
 import '../../design_system.dart';
 
 class CSIndicator extends StatelessWidget {

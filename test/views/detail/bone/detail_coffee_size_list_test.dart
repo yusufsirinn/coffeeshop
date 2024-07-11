@@ -1,4 +1,4 @@
-import 'package:coffeeshop/core/core.dart';
+import 'package:coffeeshop/design_system/design_system.dart';
 import 'package:coffeeshop/views/detail/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
