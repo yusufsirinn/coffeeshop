@@ -1,16 +1,55 @@
-# coffeeshop
+# Coffee Shop
 
-A new Flutter project.
+## Description
+Coffee Shop is a mobile application that allows users to search for coffee and place orders for coffee delivery.
 
-## Getting Started
+## Screenshots
+<p float="left">
+  <img src="app_screenshot/screenshot1.png" width="300" />
+  <img src="app_screenshot/screenshot2.png" width="300" />
+  <img src="app_screenshot/screenshot3.png" width="300" />
+  <img src="app_screenshot/screenshot4.png" width="300" />
+  <img src="app_screenshot/screenshot5.png" width="300" />
+</p>
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK
+- Dart SDK
 
-A few resources to get you started if this is your first Flutter project:
+### Installation Steps
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/username/coffee-shop.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd coffee-shop
+    ```
+3. Install the required packages:
+    ```bash
+    flutter pub get
+    ```
+4. Run the application:
+    ```bash
+    flutter run
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
+Once the application is launched, you can search for coffee and place orders for coffee delivery. The coffee delivery feature allows you to get your favorite coffee delivered to your doorstep easily.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Key Features
+- Provide detailed information about coffee
+- User-friendly interface
+
+## Libraries Used
+- `google_fonts`: To use Google fonts
+- `flutter_svg`: To display SVG format icons
+- `flutter_map`: For map components
+- `latlong2`: For geographical coordinates
+- `intl`: For international date and time formats
+- `dio`: For HTTP requests
+- `bloc`: For state management
+- `flutter_bloc`: Integration for Bloc with Flutter
+- `equatable`: For object comparisons
+
+
