@@ -15,8 +15,8 @@ class LoginBackgroundImage extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.bottomCenter,
-                heightFactor: .70,
-                widthFactor: .90,
+                heightFactor: .50,
+                widthFactor: .95,
                 child: Center(
                   child: Image.asset(AppImages.coffeeSoGood.png),
                 ),
